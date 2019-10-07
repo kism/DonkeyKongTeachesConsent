@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "071ddce3-4aaf-4809-a384-27e118ada565",
+            "Value": {
+                "id": "54384eaa-3bf8-4bf9-9c3c-51e2e50aa11f",
+                "resourcePath": "objects\\obj_transition\\obj_transition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0f62ac02-01b2-4d66-96c5-f83e454f3ea8",
             "Value": {
                 "id": "f550f07c-2365-4f07-b508-51f47dfd7099",
@@ -215,6 +223,14 @@
             }
         },
         {
+            "Key": "6f2395ae-f838-419f-b832-34205336eeab",
+            "Value": {
+                "id": "ed1d398d-c2b1-4bb3-81e9-2ca99f866ff8",
+                "resourcePath": "objects\\obj_thrice\\obj_thrice.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "728b92f8-ea71-40d7-b618-2a4f074ff306",
             "Value": {
                 "id": "391ff868-4bd7-405c-8f6e-e80bf49c5945",
@@ -356,6 +372,14 @@
                 "id": "9185bbd7-2a27-4388-a70a-3321daef8824",
                 "resourcePath": "views\\defc30d9-6129-49fa-b7c0-838d972a7eba.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e7088261-0e19-4bd8-863e-e43c34d76f8f",
+            "Value": {
+                "id": "8cfb08da-6e4e-4d74-8a1e-b1a0ca5acffa",
+                "resourcePath": "fonts\\font_Thrice\\font_Thrice.yy",
+                "resourceType": "GMFont"
             }
         },
         {
