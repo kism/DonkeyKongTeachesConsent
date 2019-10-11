@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-visible = true
-depth = 1
+if x > 960 {
+	x = x - 20
+}

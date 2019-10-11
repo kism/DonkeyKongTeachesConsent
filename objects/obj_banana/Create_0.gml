@@ -5,5 +5,6 @@
 
 phy_rotation = random_range(-179,179)
 alarm[0] = room_speed * 4
+depth = 0
 
-instance_deactivate_object(instance_id);
+//instance_deactivate_object(instance_id);

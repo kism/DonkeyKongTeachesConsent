@@ -21,5 +21,14 @@ if glo_calibrationstate == "calibrated" || glo_calibrationstate == "transition"{
 	visible = false;
 }
 
+if glo_calibrationstate == "transition"{
+	if !instance_exists(obj_transition){
+		x = 1920
+		y = 0
+		instance_create_layer(x,y,"Instances",obj_transition)
+		//instance_create_layer(1920,0,"Instances",obj_transition)
+	}
+}
+
 
 

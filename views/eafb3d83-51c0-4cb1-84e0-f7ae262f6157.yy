@@ -18,7 +18,7 @@
         "76a49632-6891-4faf-8517-63e315dd1c7a",
         "49d1ba23-6e8a-4322-96d9-248c28203552"
     ],
-    "filterType": "root",
+    "filterType": "user",
     "folderName": "Calibrate Room",
     "isDefaultView": false,
     "localisedFolderName": ""
