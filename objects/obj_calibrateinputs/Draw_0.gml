@@ -29,12 +29,12 @@ if glo_calibrationstate == "controller" || glo_calibrationstate == "calibrated"{
 
 if glo_calibrationstate == "controller" || glo_calibrationstate == "calibrated"{
 	if glo_buttononemap == "-1"{
-		text = "Hit Left Konga";
+		text = "Hit Left Bongo";
 		global_scr_inputButtonDetect(glo_controllerid,1);
 		draw_text(x,y,text);
 	}
 	if glo_buttononemap != "-1" && glo_buttontwomap == "-1"{
-		text = "Hit Right Konga"
+		text = "Hit Right Bongo"
 		global_scr_inputButtonDetect(glo_controllerid,2)
 		draw_text(x,y,text);
 	} else if glo_buttontwomap != "-1" {
