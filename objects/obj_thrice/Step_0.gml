@@ -13,9 +13,29 @@ if glo_calibrationstate == "calibrated" || glo_calibrationstate == "transition"{
 	}
 	if  buttononecountdown && buttontwocountdown && debounce == false{
 		debounce = true;
-		alarm[2] = room_speed * 0.1;
 		hits += 1;
+		alarm[2] = room_speed * 0.1;
 		alarm[3] = room_speed * 0.5;
+		show_debug_message(string(hits))
+		
+		if hits == 1 {
+			audio_stop_all()
+			if !audio_is_playing(snd_calhit1) {
+				audio_play_sound(snd_calhit1,1,0);
+			}
+		} else if hits == 2 {
+			if !audio_is_playing(snd_calhit2) {
+				audio_play_sound(snd_calhit2,2,0);
+			}
+		} else if hits == 3 {
+			if !audio_is_playing(snd_calhit3) {
+				audio_play_sound(snd_calhit3,3,0);
+			}
+		} else if hits == 4 {
+			if !audio_is_playing(snd_calhit4) {
+				audio_play_sound(snd_calhit4,4,0);
+			}
+		}
 	}
 } else {
 	visible = false;

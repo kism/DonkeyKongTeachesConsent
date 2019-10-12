@@ -1,8 +1,8 @@
-x = 20;
+x = room_width/2;
 y = room_height/2;
 
 //Populate
-draw_set_font(font_Calibration);
+//draw_set_font(font_Calibration);
 
 /*text = "Using Controller: " + gamepad_get_description(glo_controllerid);
 
@@ -29,21 +29,17 @@ if glo_calibrationstate == "controller" || glo_calibrationstate == "calibrated"{
 
 if glo_calibrationstate == "controller" || glo_calibrationstate == "calibrated"{
 	if glo_buttononemap == "-1"{
-		text = "Hit Left Bongo";
+		draw_sprite(spr_calibrate, 0, x, y);
 		global_scr_inputButtonDetect(glo_controllerid,1);
-		draw_text(x,y,text);
 	} else if glo_buttononealtmap == "-1" {
-		text = "Hit Left Bongo 2";
+		draw_sprite(spr_calibrate, 1, x, y);
 		global_scr_inputButtonDetect(glo_controllerid,2);
-		draw_text(x,y,text);
 	} else if glo_buttontwomap == "-1"{
-		text = "Hit Right Bongo"
+		draw_sprite(spr_calibrate, 2, x, y);
 		global_scr_inputButtonDetect(glo_controllerid,3)
-		draw_text(x,y,text);
 	} else if glo_buttontwoaltmap == "-1" {
-		text = "Hit Right Bongo 2"
+		draw_sprite(spr_calibrate, 3, x, y);
 		global_scr_inputButtonDetect(glo_controllerid,4)
-		draw_text(x,y,text);	
 	} else if glo_buttontwoaltmap != "-1" {
 		glo_calibrationstate = "calibrated";
 	}
