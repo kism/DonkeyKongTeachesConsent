@@ -32,12 +32,19 @@ if glo_calibrationstate == "controller" || glo_calibrationstate == "calibrated"{
 		text = "Hit Left Bongo";
 		global_scr_inputButtonDetect(glo_controllerid,1);
 		draw_text(x,y,text);
-	}
-	if glo_buttononemap != "-1" && glo_buttontwomap == "-1"{
-		text = "Hit Right Bongo"
-		global_scr_inputButtonDetect(glo_controllerid,2)
+	} else if glo_buttononealtmap == "-1" {
+		text = "Hit Left Bongo 2";
+		global_scr_inputButtonDetect(glo_controllerid,2);
 		draw_text(x,y,text);
-	} else if glo_buttontwomap != "-1" {
+	} else if glo_buttontwomap == "-1"{
+		text = "Hit Right Bongo"
+		global_scr_inputButtonDetect(glo_controllerid,3)
+		draw_text(x,y,text);
+	} else if glo_buttontwoaltmap == "-1" {
+		text = "Hit Right Bongo 2"
+		global_scr_inputButtonDetect(glo_controllerid,4)
+		draw_text(x,y,text);	
+	} else if glo_buttontwoaltmap != "-1" {
 		glo_calibrationstate = "calibrated";
 	}
 }
