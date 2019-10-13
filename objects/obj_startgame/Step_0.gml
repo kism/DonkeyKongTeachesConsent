@@ -14,17 +14,18 @@ if ready == true {
 }
 
 if startgame == true {
+	if !instance_exists(obj_greenbg) {
+		instance_create_depth(0,0,50,obj_greenbg)
+	}	
 	if obj_desk.image_alpha > 0 {
 		obj_desk.image_alpha -= 0.01;
 	}
 	if obj_title.image_alpha > 0 {
 		obj_title.image_alpha -= 0.01;
 	}
-	if obj_bluebg.image_alpha > 0 {
-		obj_bluebg.image_alpha -= 0.0025;
-	}
+	obj_bluebg.fadeout = true
 	if audio_sound_get_gain(msc_schoolhouse) == 1 {
 		audio_sound_gain(msc_schoolhouse,0,5000)
-		alarm[1] = room_speed * 3
+		alarm[1] = room_speed * 5
 	}
 }
