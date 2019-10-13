@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/// @description Insert description here
+// You can write your code in this editor
+
 if glo_calibrationstate == "calibrated" || glo_calibrationstate == "transition"{
 	visible = true;
 	if glo_buttoneraise == true {
@@ -19,20 +22,23 @@ if glo_calibrationstate == "calibrated" || glo_calibrationstate == "transition"{
 		show_debug_message(string(hits))
 		
 		if hits == 1 {
-			audio_stop_all()
 			if !audio_is_playing(snd_calhit1) {
+				audio_stop_sound(snd_banana)
 				audio_play_sound(snd_calhit1,1,0);
 			}
 		} else if hits == 2 {
 			if !audio_is_playing(snd_calhit2) {
+				audio_stop_sound(snd_banana)
 				audio_play_sound(snd_calhit2,2,0);
 			}
 		} else if hits == 3 {
 			if !audio_is_playing(snd_calhit3) {
+				audio_stop_sound(snd_banana)
 				audio_play_sound(snd_calhit3,3,0);
 			}
 		} else if hits == 4 {
 			if !audio_is_playing(snd_calhit4) {
+				audio_stop_sound(snd_banana)
 				audio_play_sound(snd_calhit4,4,0);
 			}
 		}
@@ -43,6 +49,8 @@ if glo_calibrationstate == "calibrated" || glo_calibrationstate == "transition"{
 
 if glo_calibrationstate == "transition"{
 	if !instance_exists(obj_transition){
+		alarm[4] = room_speed * 1.0
+		alarm[5] = room_speed * 3.0
 		x = 1920
 		y = 0
 		instance_create_layer(x,y,"Instances",obj_transition)

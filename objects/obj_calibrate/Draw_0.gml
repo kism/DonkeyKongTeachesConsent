@@ -8,19 +8,15 @@ y = 20
 draw_set_font(font_UI);
 
 foundone = false;
-text = "Press any button on the controller that you want to use\n"
+text = "Controllers found:\n"
 
 var i;
 for (i = 0; i < 50; i += 1) {
-	text = text + "  ";
-	if i < 10 {
-		text = text + " ";
-	}
 	if gamepad_is_connected(i) == true {
 		foundone = true;
-		text = text + string(i) + ": Found!: " + gamepad_get_description(i) + "\n" ;
+		text = text + " " + gamepad_get_description(i) + "\n" ;
 	} else {
-		text = text + string(i) + ": Not found!" + "\n";
+		//text = text + string(i) + ": Not found!" + "\n";
 	}
 }
 

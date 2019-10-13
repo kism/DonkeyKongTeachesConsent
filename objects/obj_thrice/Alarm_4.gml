@@ -1,6 +1,9 @@
-/// @description Transition to next room
-// You can write your code in this editor
+/// @description Play yeah
 
+//visible = false
 
-//room_goto(rm_Intro);
-//show_debug_message("To the intro!")
+//x = 1920
+//y = 0
+//instance_create_layer(x,y,"Instances",obj_transition)
+
+audio_play_sound(snd_yeah,1,0)
