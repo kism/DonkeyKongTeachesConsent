@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description visibility
 
 if glo_calibrationstate == "controller" || glo_calibrationstate == "calibrated" {
 	visible = true;

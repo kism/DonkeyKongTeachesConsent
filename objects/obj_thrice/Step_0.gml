@@ -1,8 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description main boye
 
-/// @description Insert description here
-// You can write your code in this editor
 
 if glo_calibrationstate == "calibrated" || glo_calibrationstate == "transition"{
 	visible = true;
@@ -54,7 +51,6 @@ if glo_calibrationstate == "transition"{
 		x = 1920
 		y = 0
 		instance_create_layer(x,y,"Instances",obj_transition)
-		//instance_create_layer(1920,0,"Instances",obj_transition)
 	}
 }
 

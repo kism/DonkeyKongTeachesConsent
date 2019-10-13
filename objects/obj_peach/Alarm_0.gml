@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description unload
 
 phy_active = false
 instance_deactivate_object(self)

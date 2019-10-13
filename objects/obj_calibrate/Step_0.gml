@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description find controller to be used
 
 if glo_calibrationstate != "initial"{
 	visible = false;

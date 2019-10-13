@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description G L O B A L S
 
 //Controllers
 globalvar glo_controllerid;

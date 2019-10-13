@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Spawn banana!
+// if a button has been pressed
 
 if glo_calibrationstate != "transition" {
 	global_scr_inputGet(glo_controllerid);
