@@ -5,11 +5,7 @@ if ready == true {
 
 	if glo_buttoneraise == true || glo_butttworaise == true {
 		physics_world_gravity(0,60);
-		if !instance_exists(obj_dk) {
-			instance_create_depth(room_width * 0.5,room_height * 0.5,50,obj_dk);
-			obj_dk.image_alpha = 0;
-			startgame = true
-		}	
+		startgame = true
 	} 
 }
 
