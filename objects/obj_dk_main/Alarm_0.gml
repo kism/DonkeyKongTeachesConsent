@@ -1,4 +1,4 @@
-/// @description Spank Check every second
+/// @description DK wants a spank
 
 if random_range(0,10) >= 8 {
 	obj_dk_main.image_index = 1;

@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "28b368bd-5cc5-42d5-8651-0a68cb92e9c6",
+            "Value": {
+                "id": "3efd569a-1688-45de-b95f-cafd78428751",
+                "resourcePath": "objects\\obj_spank_right\\obj_spank_right.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2dde5ba5-5210-4bd8-b93a-addbb0276185",
             "Value": {
                 "id": "c7cb114f-16b5-4c60-8287-9438fe0c9093",
@@ -156,6 +164,14 @@
                 "id": "d266397a-2710-4cf4-8322-dd1e81aaf923",
                 "resourcePath": "views\\365a46fd-0bbd-49d9-8eeb-5d0af9c0e8e1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "36a7e442-df89-4f74-bcdf-9daf67722d45",
+            "Value": {
+                "id": "a8f8ad4b-d974-4535-b975-3c80c4e9dc5f",
+                "resourcePath": "sounds\\msc_aquatic\\msc_aquatic.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -367,6 +383,14 @@
             }
         },
         {
+            "Key": "7de88345-3dc3-442c-80b8-ca024b60c265",
+            "Value": {
+                "id": "ae5ab5b4-cb6c-4595-90d0-acbf847c1003",
+                "resourcePath": "objects\\obj_spank_left\\obj_spank_left.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "871b4fec-02eb-472d-a443-7aa5dee97904",
             "Value": {
                 "id": "52d8be2b-7de7-407b-a2e6-d0043c2bfcab",
@@ -495,6 +519,14 @@
             }
         },
         {
+            "Key": "bf4b3c67-f190-4430-87db-312e304811cd",
+            "Value": {
+                "id": "40181890-2304-47cc-88dd-efdb9f12e6a3",
+                "resourcePath": "sprites\\spr_spank_left\\spr_spank_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c59ec1a6-f657-4dc6-9c93-04586265ab88",
             "Value": {
                 "id": "e62b3087-9879-453a-8e5e-168a27446db5",
@@ -540,6 +572,14 @@
                 "id": "7fda438d-7509-4517-968a-7ea324a2d75b",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d28aff29-0478-49e7-8aa4-db28d56522a8",
+            "Value": {
+                "id": "32a0151e-7553-49d9-8714-f47183dd664a",
+                "resourcePath": "sprites\\spr_spank_right\\spr_spank_right.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
