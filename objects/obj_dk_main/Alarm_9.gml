@@ -1,2 +1,3 @@
 /// @description Debounce?
 
+debounce = false
