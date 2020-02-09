@@ -11,9 +11,9 @@ if glo_calibrationstate != "transitionend" {
 	obj_titlescreenspawner.count += 1;
 	//alarm[0] = room_speed * 30;
 	if random_range(0,100) > 50 {
-		phy_rotation = random_range(100,25);
+		phy_rotation = random_range(100,50);
 	} else {
-		phy_rotation = random_range(-100,-25);
+		phy_rotation = random_range(-100,-50);
 	}
 	phy_angular_velocity = random_range(-100,100);
 	depth = random_range(25,40);
