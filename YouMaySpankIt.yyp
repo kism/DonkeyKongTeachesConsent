@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0904953f-4c95-4510-a025-ae35fd3de86e",
+            "Value": {
+                "id": "a7457433-c841-4def-9059-b89fa344d8b5",
+                "resourcePath": "objects\\obj_dk_frenzy\\obj_dk_frenzy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0a4329cb-51b9-4b0c-8fd2-cf224bdd62a7",
             "Value": {
                 "id": "c324151a-f863-469b-8b7f-6cb947fef7d4",
