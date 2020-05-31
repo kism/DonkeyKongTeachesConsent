@@ -2,7 +2,7 @@
     "id": "989996fd-ff31-4596-a1be-36a22d93a35a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_reaction",
+    "name": "obj_dk_reaction",
     "eventList": [
         
     ],
