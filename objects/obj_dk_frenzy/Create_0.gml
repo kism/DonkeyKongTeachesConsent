@@ -10,12 +10,13 @@ obj_dk_frenzy.y = room_height/1.6;
 frenzy = false
 vol = 1;
 
-// Spank Vars
-spanks = 0;
-spank_heat = 0;
-spank_heat_min = 0;
-spank_heat_new = 0;
+// Spank Vars, avoid div by zero
+spanks = 1;
+spank_heat = 1;
+spank_heat_min = 1;
+spank_heat_new = 1;
 
+complete = false;
 
 //Absolutely spank text
 alarm[0] = 5 * room_speed;

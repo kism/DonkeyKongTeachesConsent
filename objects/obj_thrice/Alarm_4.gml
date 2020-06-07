@@ -1,4 +1,4 @@
-/// @description Play yeah
+/// @description Play DK's "Okay"
 
 //visible = false
 
@@ -6,4 +6,4 @@
 //y = 0
 //instance_create_layer(x,y,"Instances",obj_transition)
 
-audio_play_sound(snd_yeah,1,0)
+audio_play_sound(snd_dk_okay,1,0)

@@ -9,7 +9,7 @@ if vol >= 0 {
 
 global_scr_inputGet(glo_controllerid)
 
-if (glo_buttoneraise == true || glo_butttworaise == true)  {
+if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)  {
 	if frenzy == false {
 		alarm[1] = 0.5 * room_speed;
 	} else {
@@ -36,4 +36,9 @@ if (glo_buttoneraise == true || glo_butttworaise == true)  {
 	}
 
 }
- 
+
+if (spank_heat > 130 && complete == false) {
+   alarm[9] = room_speed * 5;
+   alarm[8] = room_speed * 1;
+   complete = true;
+}

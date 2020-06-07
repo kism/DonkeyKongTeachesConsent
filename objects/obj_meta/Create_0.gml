@@ -26,5 +26,7 @@ glo_buttontwoaltmap  = -1;
 //States
 globalvar glo_calibrationstate;
 globalvar glo_failstate;
+globalvar glo_fadetogame;
 glo_failstate = false;
-glo_calibrationstate = "initial"
+glo_calibrationstate = "initial";
+glo_fadetogame = "false";
