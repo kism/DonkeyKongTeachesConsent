@@ -1,10 +1,11 @@
 /// @description Init
 
-depth = 2;
-obj_dk_frenzy.image_alpha = 0.5; //placeholder to indicate this phase
+//image_alpha = 0.75;
+obj_dk_frenzy.image_alpha = 1; //placeholder to indicate this phase
 obj_dk_frenzy.image_index = 0;
 obj_dk_frenzy.x = room_width/2.7;
 obj_dk_frenzy.y = room_height/1.6;
+depth = 0;
 
 // Misc
 frenzy = false
@@ -19,5 +20,6 @@ spank_heat_new = 1;
 complete = false;
 
 //Absolutely spank text
-alarm[0] = 5 * room_speed;
+alarm[11] = 1 * room_speed;
+
 

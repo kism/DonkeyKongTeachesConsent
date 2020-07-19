@@ -1,8 +1,8 @@
-/// @description Countdown to frenzy
+/// @description Spank it, enable frenzy
 
 frenzy = true;
-obj_dk_frenzy.image_alpha = 1; //placeholder to indicate this phase
-
 
 // Spank Acceleration code start!
 alarm[2] = room_speed * 0.8;
+
+instance_create_layer(room_width/2.5,room_height/2.7,"Instances",obj_abs_si);
