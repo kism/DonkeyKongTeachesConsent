@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_abs_ym",
     "eventList": [
-        
+        {
+            "id": "ef1fe1c6-033c-47e8-aa44-059eaeaf1f42",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "1c64d12d-6190-4a01-890b-c13547c1e9bc"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
