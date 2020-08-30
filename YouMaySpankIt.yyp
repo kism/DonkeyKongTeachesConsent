@@ -40,6 +40,7 @@
     {"id":{"name":"snd_dk_okay","path":"sounds/snd_dk_okay/snd_dk_okay.yy",},"order":17,},
     {"id":{"name":"snd_dk_complete","path":"sounds/snd_dk_complete/snd_dk_complete.yy",},"order":18,},
     {"id":{"name":"global_scr_inputDetect","path":"scripts/global_scr_inputDetect/global_scr_inputDetect.yy",},"order":0,},
+    {"id":{"name":"obj_credits_spawner","path":"objects/obj_credits_spawner/obj_credits_spawner.yy",},"order":29,},
     {"id":{"name":"global_scr_inputButtonDetect","path":"scripts/global_scr_inputButtonDetect/global_scr_inputButtonDetect.yy",},"order":1,},
     {"id":{"name":"global_scr_inputGet","path":"scripts/global_scr_inputGet/global_scr_inputGet.yy",},"order":2,},
     {"id":{"name":"scr_dk_playGrunt","path":"scripts/scr_dk_playGrunt/scr_dk_playGrunt.yy",},"order":3,},
