@@ -1,8 +1,12 @@
 {
-    "id": "871b4fec-02eb-472d-a443-7aa5dee97904",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "global_scr_inputButtonDetect",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "global_scr_inputButtonDetect",
+  "tags": [],
+  "resourceType": "GMScript",
 }
