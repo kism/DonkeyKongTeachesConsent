@@ -1,5 +1,6 @@
 /// @description Steppy & DK been spanked
 
+//This isnt future proof lol Kieran
 if vol >= 0 {
 	vol -= 0.005;
     audio_sound_gain(msc_aquatic, vol,0);
@@ -41,4 +42,13 @@ if (spank_heat > 130 && complete == false) {
    alarm[9] = room_speed * 5;
    alarm[8] = room_speed * 1;
    complete = true;
+}
+
+
+// Spawn meta fruit
+if (complete == false && frenzy == true) {
+
+		if (random_range(0, 99) > 80) {
+			instance_create_layer(random_range(0, room_width),random_range(0, room_height),"Instances",obj_final_fruit)
+		}
 }

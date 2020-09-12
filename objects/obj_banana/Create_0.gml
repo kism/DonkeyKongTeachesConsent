@@ -8,7 +8,7 @@ if glo_calibrationstate != "transitionend" {
 		audio_play_sound(snd_banana,0,0);
 	}
 } else {
-	obj_titlescreenspawner.count += 1;
+	//obj_titlescreenspawner.count += 1;
 	//alarm[0] = room_speed * 30;
 	if random_range(0,100) > 50 {
 		phy_rotation = random_range(100,50);
