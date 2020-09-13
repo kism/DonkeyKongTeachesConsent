@@ -19,11 +19,26 @@ switch (irandom(5)) {
 		alarm[0] = 0; break; // Don't question
  }
  
+if random_range(0,1) == 0 {
+	phy_linear_velocity_x = random_range(-300, 300);
+	phy_linear_velocity_y = 30
+} else {
+	phy_linear_velocity_x = random_range(-300, 300);
+	phy_linear_velocity_y = 30
+}
+ 
+self.y = random_range(0,room_height);
+ 
+//Rotation
 if random_range(0,100) > 50 {
 	phy_rotation = random_range(100,50);
+
 } else {
 	phy_rotation = random_range(-100,-50);
 }
 
+//No idea what this does
 phy_angular_velocity = random_range(-100,100);
-depth = random_range(25,40);
+
+//Make stacking a bit nicer
+depth = random_range(-10,-20);

@@ -14,9 +14,6 @@ if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)
 	if frenzy == false {
 		alarm[1] = 0.5 * room_speed;
 	} else {
-		//instance_deactivate_object(obj_ymsi)
-		//instance_deactivate_object(obj_once)
-		
 		//Spank left cheek	
 		if glo_buttoneraise == true {
 			instance_create_layer(room_width/4.1,room_height/1.9,"Instances",obj_spank_left);
@@ -47,8 +44,11 @@ if (spank_heat > 130 && complete == false) {
 
 // Spawn meta fruit
 if (complete == false && frenzy == true) {
-		
-		if (random_range(25, 250) < spank_heat) {
-			instance_create_layer(random_range(0, room_width),random_range(0, room_height),"Instances",obj_final_fruit)
+	if (random_range(25, 250) < spank_heat) {
+		if irandom(1) == 0 {
+			instance_create_layer(0 - room_width / 10, random_range(0,room_height / 2),"Instances",obj_final_fruit)
+		} else {
+			instance_create_layer(room_width + room_width / 10, random_range(0,room_height / 2),"Instances",obj_final_fruit)
 		}
+	}
 }
