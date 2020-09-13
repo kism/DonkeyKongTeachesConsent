@@ -1,32 +1,22 @@
 /// @description everything happens here
 
-fruit_choice = random_range(0, 5);
 alarm[0] = room_speed * 4;
 
-
-
-switch (fruit_choice) {   
+switch (irandom(5)) {   
 	case 1:
-		image_index = 0;
-		break;
+		image_index = 0; break;
 	case 2:
-		image_index = 1;
-		break;
+		image_index = 1; break;
 	case 3:
-		image_index = 2;
-		break;
+		image_index = 2; break;
 	case 4:
-		image_index = 3;
-		break;
+		image_index = 3; break;
 	case 5:
-		image_index = 4;
-		break;
+		image_index = 4; break;
 	case 6:
-		image_index = 5;
-		break;
+		image_index = 5; break;
 	default:
-		alarm[0] = 0;
-		break;
+		alarm[0] = 0; break; // Don't question
  }
  
 if random_range(0,100) > 50 {

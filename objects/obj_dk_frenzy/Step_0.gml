@@ -47,8 +47,8 @@ if (spank_heat > 130 && complete == false) {
 
 // Spawn meta fruit
 if (complete == false && frenzy == true) {
-
-		if (random_range(0, 99) > 80) {
+		
+		if (random_range(25, 250) < spank_heat) {
 			instance_create_layer(random_range(0, room_width),random_range(0, room_height),"Instances",obj_final_fruit)
 		}
 }
