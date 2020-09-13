@@ -19,14 +19,13 @@ switch (irandom(5)) {
 		alarm[0] = 0; break; // Don't question
  }
  
-if random_range(0,1) == 0 {
-	phy_linear_velocity_x = random_range(-300, 300);
-	phy_linear_velocity_y = 30
+if (x > (room_width / 2)) {
+	phy_linear_velocity_x = random_range(-300, -1000);
 } else {
-	phy_linear_velocity_x = random_range(-300, 300);
-	phy_linear_velocity_y = 30
+	phy_linear_velocity_x = random_range(300, 1000);
 }
- 
+phy_linear_velocity_y = random_range(50,300);
+
 self.y = random_range(0,room_height);
  
 //Rotation
