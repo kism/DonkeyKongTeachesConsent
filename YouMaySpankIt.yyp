@@ -78,6 +78,7 @@
     {"id":{"name":"obj_dk_frenzy","path":"objects/obj_dk_frenzy/obj_dk_frenzy.yy",},"order":18,},
     {"id":{"name":"obj_spank_right","path":"objects/obj_spank_right/obj_spank_right.yy",},"order":19,},
     {"id":{"name":"obj_spank_left","path":"objects/obj_spank_left/obj_spank_left.yy",},"order":20,},
+    {"id":{"name":"obj_colour_overlay","path":"objects/obj_colour_overlay/obj_colour_overlay.yy",},"order":34,},
     {"id":{"name":"obj_ymsi","path":"objects/obj_ymsi/obj_ymsi.yy",},"order":21,},
     {"id":{"name":"obj_once","path":"objects/obj_once/obj_once.yy",},"order":22,},
     {"id":{"name":"obj_dk_reaction","path":"objects/obj_dk_reaction/obj_dk_reaction.yy",},"order":23,},
