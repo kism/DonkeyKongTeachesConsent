@@ -1,5 +1,7 @@
 /// @description everything happens here
 
+// GitExtensions confuses me
+
 alarm[0] = room_speed * 10;
 
 switch (irandom(5)) {   
