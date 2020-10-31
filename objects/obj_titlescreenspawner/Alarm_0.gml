@@ -5,8 +5,8 @@
 
 // This split up to avoid doing it all in one frame
 
-if count < 25 {
-	for (i = 0; i < 50; i += 1) {
+if count < 10 {
+	for (i = 0; i < 30; i += 1) {
 		rx = random_range(room_width - room_width * 1.2,room_width * 1.2);
 		ry = random_range(room_height - room_height * 1.3,room_height * 1.3);
 		instance_create_layer(rx,ry,"Instances",obj_banana);

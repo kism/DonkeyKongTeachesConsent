@@ -41,6 +41,9 @@ if (spank_heat > 130 && complete == false) {
    complete = true;
 }
 
+if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
+	instance_create_layer(0,0,"Instances",obj_shadercontrol)
+}
 
 // Spawn meta fruit
 if (complete == false && frenzy == true) {

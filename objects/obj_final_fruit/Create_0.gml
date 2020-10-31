@@ -26,11 +26,11 @@ if (x > (room_width / 2)) {
 } else {
 	phy_linear_velocity_x = random_range(300, 1000);
 }
-phy_linear_velocity_y = random_range(-50,-3000);
+phy_linear_velocity_y = random_range(-50,-2000);
 
 self.y = random_range(0,room_height/2.5);
  
-//Rotation
+// Rotation
 if random_range(0,100) > 50 {
 	phy_rotation = random_range(100,50);
 
@@ -38,8 +38,8 @@ if random_range(0,100) > 50 {
 	phy_rotation = random_range(-100,-50);
 }
 
-//No idea what this does
-//phy_angular_velocity = random_range(-100,100);
+// Add rotation
+phy_angular_velocity = random_range(-150,150);
 
-//Make stacking a bit nicer
+// Make stacking a bit nicer
 depth = random_range(-10,-20);
