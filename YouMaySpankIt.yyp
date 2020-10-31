@@ -99,10 +99,10 @@
     "name": "Default",
     "children": [],
   },
-  "RoomOrder": [
-    {"name":"rm_Calibrate","path":"rooms/rm_Calibrate/rm_Calibrate.yy",},
-    {"name":"rm_Chapter1","path":"rooms/rm_Chapter1/rm_Chapter1.yy",},
-    {"name":"rm_Credits","path":"rooms/rm_Credits/rm_Credits.yy",},
+  "RoomOrderNodes": [
+    {"roomId":{"name":"rm_Calibrate","path":"rooms/rm_Calibrate/rm_Calibrate.yy",},},
+    {"roomId":{"name":"rm_Chapter1","path":"rooms/rm_Chapter1/rm_Chapter1.yy",},},
+    {"roomId":{"name":"rm_Credits","path":"rooms/rm_Credits/rm_Credits.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -124,13 +124,13 @@
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.0.529",
+    "IDEVersion": "23.1.1.214",
   },
-  "resourceVersion": "1.3",
+  "resourceVersion": "1.4",
   "name": "YouMaySpankIt",
   "tags": [],
   "resourceType": "GMProject",

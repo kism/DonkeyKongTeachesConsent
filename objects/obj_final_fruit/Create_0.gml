@@ -1,6 +1,6 @@
 /// @description everything happens here
 
-alarm[0] = room_speed * 4;
+alarm[0] = room_speed * 10;
 
 switch (irandom(5)) {   
 	case 1:
@@ -24,9 +24,9 @@ if (x > (room_width / 2)) {
 } else {
 	phy_linear_velocity_x = random_range(300, 1000);
 }
-phy_linear_velocity_y = random_range(50,300);
+phy_linear_velocity_y = random_range(-50,-3000);
 
-self.y = random_range(0,room_height);
+self.y = random_range(0,room_height/2.5);
  
 //Rotation
 if random_range(0,100) > 50 {
@@ -37,7 +37,7 @@ if random_range(0,100) > 50 {
 }
 
 //No idea what this does
-phy_angular_velocity = random_range(-100,100);
+//phy_angular_velocity = random_range(-100,100);
 
 //Make stacking a bit nicer
 depth = random_range(-10,-20);
