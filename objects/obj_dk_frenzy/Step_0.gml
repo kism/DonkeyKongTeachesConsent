@@ -35,10 +35,15 @@ if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)
 
 }
 
+// Ending condition
 if (spank_heat > 130 && complete == false) {
    alarm[9] = room_speed * 5;
    alarm[8] = room_speed * 1;
    complete = true;
+}
+
+if (spank_heat > 1) && (!(audio_is_playing(msc_rambi))) {
+	audio_play_sound(msc_rambi,1,0)
 }
 
 if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
