@@ -13,12 +13,12 @@ if (glo_buttoneraise == true || glo_butttworaise == true)  {
 	instance_deactivate_object(obj_once)
 	//Spank left cheek	
 	if glo_buttoneraise == true {
-		instance_create_layer(room_width/4.1,room_height/1.9,"Instances",obj_spank_left);
+		instance_create_layer(room_width/4.1,room_height/1.8,"Instances",obj_spank_left);
 		scr_dk_playSpank();
 	}
 	//Spank right cheek
 	if glo_butttworaise == true {
-		instance_create_layer(room_width/3.5,room_height/1.8,"Instances",obj_spank_right);
+		instance_create_layer(room_width/3.2,room_height/1.8,"Instances",obj_spank_right);
 		scr_dk_playSpank();
 	}
 	// debounce check to allow a double spank

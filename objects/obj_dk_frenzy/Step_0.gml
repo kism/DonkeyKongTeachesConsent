@@ -16,38 +16,56 @@ if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)
 	} else {
 		//Spank left cheek	
 		if glo_buttoneraise == true {
-			instance_create_layer(room_width/4.1,room_height/1.9,"Instances",obj_spank_left);
+			instance_create_layer(room_width/4.1,room_height/1.8,"Instances",obj_spank_left);
 			scr_dk_playSpank();
 		}
 		//Spank right cheek
 		if glo_butttworaise == true {
-			instance_create_layer(room_width/3.5,room_height/1.8,"Instances",obj_spank_right);
+			instance_create_layer(room_width/3.2,room_height/1.8,"Instances",obj_spank_right);
 			scr_dk_playSpank();
 		}
 
 		//DK has been correctly spanked	
-		obj_dk_reaction.image_index = 1;
+		if spanks > 3 {
+			obj_dk_reaction.image_index = 2;
+		} else {
+			obj_dk_reaction.image_index = 1;
+		}
+		
 		scr_dk_playGrunt();
 		alarm[3] = room_speed * 1;
 		
 		spanks += 1;
 	}
-
 }
 
 // Ending condition
 if (spank_heat > 130 && complete == false) {
-   alarm[9] = room_speed * 5;
+   // Play Sound
    alarm[8] = room_speed * 1;
+   // Go to credits
+   alarm[9] = room_speed * 6.5;
+   
+   	// Should always be true at this point in time
+	if (audio_is_playing(msc_rambi)) {
+		audio_sound_gain(msc_rambi, 0,0.5);
+	}
+	if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
+		instance_deactivate_object(obj_shadercontrol);
+	}
+	
+   
+   obj_dk_reaction.image_index = 2;
    complete = true;
 }
 
+// Music Control
 if (spank_heat > 1) && (!(audio_is_playing(msc_rambi))) {
-	audio_play_sound(msc_rambi,1,0)
+	audio_play_sound(msc_rambi,1,0);
 }
 
 if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
-	instance_create_layer(0,0,"Instances",obj_shadercontrol)
+	instance_create_layer(0,0,"Instances",obj_shadercontrol);
 }
 
 // Spawn meta fruit

@@ -67,6 +67,7 @@
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},"order":9,},
     {"id":{"name":"obj_calibration","path":"objects/obj_calibration/obj_calibration.yy",},"order":10,},
     {"id":{"name":"obj_titlescreenspawner","path":"objects/obj_titlescreenspawner/obj_titlescreenspawner.yy",},"order":11,},
+    {"id":{"name":"obj_bongos","path":"objects/obj_bongos/obj_bongos.yy",},"order":35,},
     {"id":{"name":"obj_bluebg","path":"objects/obj_bluebg/obj_bluebg.yy",},"order":12,},
     {"id":{"name":"shd_finalseq","path":"shaders/shd_finalseq/shd_finalseq.yy",},"order":0,},
     {"id":{"name":"obj_bluebg_not_actually_fg","path":"objects/obj_bluebg_not_actually_fg/obj_bluebg_not_actually_fg.yy",},"order":13,},
