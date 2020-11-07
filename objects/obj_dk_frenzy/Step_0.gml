@@ -54,8 +54,6 @@ if (spank_heat > 130 && complete == false) {
 		instance_deactivate_object(obj_shadercontrol);
 	}
 	
-   
-   obj_dk_reaction.image_index = 2;
    complete = true;
 }
 
@@ -77,4 +75,8 @@ if (complete == false && frenzy == true) {
 			instance_create_layer(room_width + room_width / 10, random_range(0,room_height / 2),"Instances",obj_final_fruit)
 		}
 	}
+}
+
+if complete == true {
+   obj_dk_reaction.image_index = 1;	
 }

@@ -1,16 +1,10 @@
 /// @description Steppy & DK been spanked
 
-global_scr_inputGet(glo_controllerid)
-
-//Fade in
-if self.image_alpha < 1 {
-	self.image_alpha += 0.015;
-}
-
+global_scr_inputGet(glo_controllerid);
 
 if (glo_buttoneraise == true || glo_butttworaise == true)  {
-	instance_deactivate_object(obj_ymsi)
-	instance_deactivate_object(obj_once)
+	instance_deactivate_object(obj_ymsi);
+	instance_deactivate_object(obj_once);
 	//Spank left cheek	
 	if glo_buttoneraise == true {
 		instance_create_layer(room_width*0.24,room_height*0.55,"Instances",obj_spank_left);
