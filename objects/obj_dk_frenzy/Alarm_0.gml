@@ -1,16 +1,8 @@
-/// @description Spank it, enable frenzy
+/// @description DK wants a spank?
 
-frenzy = true;
-
-// Spank Acceleration code start!
-alarm[2] = room_speed * 0.8;
-
-instance_create_layer(room_width/2,room_height/4.2,"Instances",obj_abs_si);
-
-
-instance_create_layer(room_width*0.33, room_height/1.4,"Instances",obj_final_candy);
-instance_create_layer(room_width*0.66, room_height/1.3,"Instances",obj_final_gnawty);
-instance_create_layer(room_width*0.50, room_height/1.45,"Instances",obj_final_funky);
-instance_create_layer(0, 0,"Instances",obj_colour_overlay);
-
-
+if random_range(0,10) >= 8 {
+	alarm[2] = 1.8 * room_speed;
+	instance_create_layer(room_width*0.15,room_height*0.22,"Instances",obj_ymsi);
+} else {
+	alarm[0] = 1 * room_speed;
+}

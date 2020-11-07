@@ -1,3 +1,3 @@
 /// @description DK does not want a spank
 
-//glo_failstate = true;
+glo_failstate = true;

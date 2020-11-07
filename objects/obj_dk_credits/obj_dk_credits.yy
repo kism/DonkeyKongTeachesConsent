@@ -1,6 +1,9 @@
 {
-  "spriteId": null,
-  "solid": true,
+  "spriteId": {
+    "name": "spr_dk_main",
+    "path": "sprites/spr_dk_main/spr_dk_main.yy",
+  },
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -18,8 +21,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_calibrateinputs","path":"objects/obj_calibrateinputs/obj_calibrateinputs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_calibrateinputs","path":"objects/obj_calibrateinputs/obj_calibrateinputs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_dk_credits","path":"objects/obj_dk_credits/obj_dk_credits.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -28,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_calibrateinputs",
+  "name": "obj_dk_credits",
   "tags": [],
   "resourceType": "GMObject",
 }

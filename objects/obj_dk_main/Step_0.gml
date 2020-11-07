@@ -4,7 +4,7 @@ global_scr_inputGet(glo_controllerid)
 
 //Fade in
 if obj_dk_main.image_alpha < 1 {
-	obj_dk_main.image_alpha += 0.0333;
+	obj_dk_main.image_alpha += 0.015;
 }
 
 
@@ -13,12 +13,12 @@ if (glo_buttoneraise == true || glo_butttworaise == true)  {
 	instance_deactivate_object(obj_once)
 	//Spank left cheek	
 	if glo_buttoneraise == true {
-		instance_create_layer(room_width/4.1,room_height/1.8,"Instances",obj_spank_left);
+		instance_create_layer(room_width*0.24,room_height*0.55,"Instances",obj_spank_left);
 		scr_dk_playSpank();
 	}
 	//Spank right cheek
 	if glo_butttworaise == true {
-		instance_create_layer(room_width/3.2,room_height/1.8,"Instances",obj_spank_right);
+		instance_create_layer(room_width*0.31,room_height*0.55,"Instances",obj_spank_right);
 		scr_dk_playSpank();
 	}
 	// debounce check to allow a double spank

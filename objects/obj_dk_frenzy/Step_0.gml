@@ -1,80 +1,44 @@
 /// @description Steppy & DK been spanked
 
-//This isnt future proof lol Kieran
-if vol >= 0 {
-	vol -= 0.005;
-    audio_sound_gain(msc_aquatic, vol,0);
-} else {
-	vol = 0;
-}
-
 global_scr_inputGet(glo_controllerid)
 
-if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)  {
-	if frenzy == false {
-		alarm[1] = 0.5 * room_speed;
-	} else {
-		//Spank left cheek	
-		if glo_buttoneraise == true {
-			instance_create_layer(room_width/4.1,room_height/1.8,"Instances",obj_spank_left);
-			scr_dk_playSpank();
-		}
-		//Spank right cheek
-		if glo_butttworaise == true {
-			instance_create_layer(room_width/3.2,room_height/1.8,"Instances",obj_spank_right);
-			scr_dk_playSpank();
-		}
+//Fade in
+if obj_dk_main.image_alpha < 1 {
+	obj_dk_main.image_alpha += 0.015;
+}
 
-		//DK has been correctly spanked	
-		if spanks > 3 {
-			obj_dk_reaction.image_index = 2;
-		} else {
+
+if (glo_buttoneraise == true || glo_butttworaise == true)  {
+	instance_deactivate_object(obj_ymsi)
+	instance_deactivate_object(obj_once)
+	//Spank left cheek	
+	if glo_buttoneraise == true {
+		instance_create_layer(room_width*0.24,room_height*0.55,"Instances",obj_spank_left);
+		scr_dk_playSpank();
+	}
+	//Spank right cheek
+	if glo_butttworaise == true {
+		instance_create_layer(room_width*0.31,room_height*0.55,"Instances",obj_spank_right);
+		scr_dk_playSpank();
+	}
+	// debounce check to allow a double spank
+	if (debounce == false) {
+		//If DK has been incorrectly spanked, add more context as to why the game is about to exit
+		if obj_dk_main.image_index == 0 {
+		   alarm[1] = 0.5 * room_speed;
+		} 
+		if (obj_dk_main.image_index == 1) {
+			//DK has been correctly spanked	
+			spanks += 1;                   //Increment spanks
+			obj_dk_main.image_index = 0;   //DK no longer needs to indicate that he want's to be spanked
 			obj_dk_reaction.image_index = 1;
-		}
-		
-		scr_dk_playGrunt();
-		alarm[3] = room_speed * 1;
-		
-		spanks += 1;
-	}
-}
-
-// Ending condition
-if (spank_heat > 130 && complete == false) {
-   // Play Sound
-   alarm[8] = room_speed * 1;
-   // Go to credits
-   alarm[9] = room_speed * 6.5;
-   
-   	// Should always be true at this point in time
-	if (audio_is_playing(msc_rambi)) {
-		audio_sound_gain(msc_rambi, 0,0.5);
-	}
-	if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
-		instance_deactivate_object(obj_shadercontrol);
-	}
-	
-   
-   obj_dk_reaction.image_index = 2;
-   complete = true;
-}
-
-// Music Control
-if (spank_heat > 1) && (!(audio_is_playing(msc_rambi))) {
-	audio_play_sound(msc_rambi,1,0);
-}
-
-if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
-	instance_create_layer(0,0,"Instances",obj_shadercontrol);
-}
-
-// Spawn meta fruit
-if (complete == false && frenzy == true) {
-	if (random_range(25, 250) < spank_heat) {
-		if irandom(1) == 0 {
-			instance_create_layer(0 - room_width / 10, random_range(0,room_height / 2),"Instances",obj_final_fruit)
-		} else {
-			instance_create_layer(room_width + room_width / 10, random_range(0,room_height / 2),"Instances",obj_final_fruit)
+			scr_dk_playGrunt();
+			alarm[3] = room_speed * 1;
+			alarm[0] = room_speed * 3;     //Wait 3 seconds + whatever random chance
+			//Spank cooldown
+			debounce = true;
+			alarm[9] = room_speed * 0.3;   //Stop inputs for 0.3 seconds, revert indicator, allow double spanks
 		}
 	}
 }
+ 
