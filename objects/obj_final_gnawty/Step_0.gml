@@ -1,5 +1,14 @@
 /// @description Fade in depending on heat
 
-if obj_dk_frenzy.spank_heat > 75 {
-	image_alpha = (obj_dk_frenzy.spank_heat + obj_dk_frenzy.spanks - 75) / 50;
+threshhold = 30
+divisor = 80
+
+
+if obj_dk_frenzy.complete = true {
+	image_alpha = 0.75;	
+} else if obj_dk_frenzy.spank_heat > threshhold {
+	image_alpha = (obj_dk_frenzy.spank_heat + obj_dk_frenzy.spanks - threshhold) / divisor;
+	if image_alpha > 0.75 {
+		image_alpha = 0.75;	
+	}
 }
