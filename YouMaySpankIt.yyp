@@ -75,7 +75,6 @@
     {"id":{"name":"obj_bluebg_not_actually_fg","path":"objects/obj_bluebg_not_actually_fg/obj_bluebg_not_actually_fg.yy",},"order":13,},
     {"id":{"name":"obj_shadercontrol","path":"objects/obj_shadercontrol/obj_shadercontrol.yy",},"order":33,},
     {"id":{"name":"obj_startgame","path":"objects/obj_startgame/obj_startgame.yy",},"order":14,},
-    {"id":{"name":"obj_dk","path":"objects/obj_dk/obj_dk.yy",},"order":15,},
     {"id":{"name":"spr_colour_overlay","path":"sprites/spr_colour_overlay/spr_colour_overlay.yy",},"order":24,},
     {"id":{"name":"obj_greenbg","path":"objects/obj_greenbg/obj_greenbg.yy",},"order":16,},
     {"id":{"name":"obj_dk_main","path":"objects/obj_dk_main/obj_dk_main.yy",},"order":17,},

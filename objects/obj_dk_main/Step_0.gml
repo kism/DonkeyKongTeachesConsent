@@ -3,8 +3,8 @@
 global_scr_inputGet(glo_controllerid)
 
 //Fade in
-if obj_dk_main.image_alpha < 1 {
-	obj_dk_main.image_alpha += 0.015;
+if self.image_alpha < 1 {
+	self.image_alpha += 0.015;
 }
 
 
@@ -24,13 +24,13 @@ if (glo_buttoneraise == true || glo_butttworaise == true)  {
 	// debounce check to allow a double spank
 	if (debounce == false) {
 		//If DK has been incorrectly spanked, add more context as to why the game is about to exit
-		if obj_dk_main.image_index == 0 {
+		if self.image_index == 0 {
 		   alarm[1] = 0.5 * room_speed;
 		} 
-		if (obj_dk_main.image_index == 1) {
+		if (self.image_index == 1) {
 			//DK has been correctly spanked	
 			spanks += 1;                   //Increment spanks
-			obj_dk_main.image_index = 0;   //DK no longer needs to indicate that he want's to be spanked
+			self.image_index = 0;   //DK no longer needs to indicate that he want's to be spanked
 			obj_dk_reaction.image_index = 1;
 			scr_dk_playGrunt();
 			alarm[3] = room_speed * 1;
