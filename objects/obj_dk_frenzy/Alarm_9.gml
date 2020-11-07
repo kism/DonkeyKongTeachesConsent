@@ -1,3 +1,3 @@
-/// @description Debounce?
+/// @description Goto credits
 
-debounce = false
+room_goto(rm_Credits)

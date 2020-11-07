@@ -1,12 +1,25 @@
 /// @description Init
 
-obj_dk_main.image_alpha = 0;
-obj_dk_main.image_index = 0;
-obj_dk_main.x = room_width/2.7;
-obj_dk_main.y = room_height/2.6;
-alarm[0] = 5 * room_speed;
-debounce = false;
-alarm[9] = 0.3 * room_speed;
-audio_play_sound(msc_aquatic,1,0);
-spanks = 0;
-depth = 20;
+//image_alpha = 0.75;
+obj_dk_frenzy.image_alpha = 1; //placeholder to indicate this phase
+obj_dk_frenzy.image_index = 0;
+obj_dk_frenzy.x = room_width/2.7;
+obj_dk_frenzy.y = room_height/2.6;
+depth = 0;
+
+// Misc
+frenzy = false
+vol = 1;
+
+// Spank Vars, avoid div by zero
+spanks = 1;
+spank_heat = 1;
+spank_heat_min = 1;
+spank_heat_new = 1;
+
+complete = false;
+
+//Absolutely spank text
+alarm[11] = 1 * room_speed;
+
+
