@@ -8,14 +8,14 @@ function scr_get_final_transparency(inImage_alpha, inThreshhold, inDivisor){
 		targetimagealpha = (obj_dk_frenzy.spank_heat + obj_dk_frenzy.spanks - inThreshhold) / inDivisor;
 		
 		if targetimagealpha > inImage_alpha {
-			inImage_alpha = inImage_alpha + 1/120
+			inImage_alpha = inImage_alpha + 1/240;
 		} else if targetimagealpha < inImage_alpha {
-			inImage_alpha = inImage_alpha - 1/120
+			inImage_alpha = inImage_alpha - 1/240;
 		}	
 		
 		if inImage_alpha > 0.75 {
 			inImage_alpha = 0.75;	
 		}
 	}
-	return inImage_alpha
+	return inImage_alpha;
 }
