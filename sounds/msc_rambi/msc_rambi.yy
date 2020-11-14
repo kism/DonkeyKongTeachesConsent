@@ -1,5 +1,5 @@
 {
-  "compression": 3,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 192,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "msc_rambi.ogg",
-  "duration": 94.02521,
+  "duration": 353.918274,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

@@ -39,8 +39,8 @@ if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)
 	}
 }
 
-// Ending condition
-if (spank_heat > 130 && complete == false) {
+// Ending condition, 130 for debug, 230 for final?
+if (spank_heat > 2 && complete == false) {
    // Play Sound
    alarm[8] = room_speed * 1;
    // Go to credits
