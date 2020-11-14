@@ -13,16 +13,16 @@ global_scr_inputGet(glo_controllerid)
 if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)  {
 	if frenzy == false {
 		alarm[1] = 0.5 * room_speed;
-	} else {
+	} else { 
 		//Spank left cheek	
 		if glo_buttoneraise == true {
-			instance_create_layer(room_width/4.1,room_height/1.8,"Instances",obj_spank_left);
-			scr_dk_playSpank();
+			//instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left);
+			scr_dk_doSpank(x,y,"left")
 		}
 		//Spank right cheek
 		if glo_butttworaise == true {
-			instance_create_layer(room_width/3.2,room_height/1.8,"Instances",obj_spank_right);
-			scr_dk_playSpank();
+			//instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right);
+			scr_dk_doSpank(x,y,"right")
 		}
 
 		//DK has been correctly spanked	
