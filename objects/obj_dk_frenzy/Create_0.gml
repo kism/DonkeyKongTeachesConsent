@@ -22,4 +22,6 @@ complete = false;
 //Absolutely spank text
 alarm[11] = 1 * room_speed;
 
+scr_dk_createfeet();
+
 

@@ -13,3 +13,5 @@ alarm[9] = 0.3 * room_speed;
 audio_play_sound(msc_aquatic,1,0);
 spanks = 0;
 depth = 20;
+
+scr_dk_createfeet();
