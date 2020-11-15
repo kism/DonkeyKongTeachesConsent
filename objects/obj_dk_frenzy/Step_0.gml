@@ -17,12 +17,12 @@ if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)
 		//Spank left cheek	
 		if glo_buttoneraise == true {
 			//instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left);
-			scr_dk_doSpank(x,y,"left")
+			scr_dk_doSpank(self.x,self.y,"left")
 		}
 		//Spank right cheek
 		if glo_butttworaise == true {
 			//instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right);
-			scr_dk_doSpank(x,y,"right")
+			scr_dk_doSpank(self.x,self.y,"right")
 		}
 
 		//DK has been correctly spanked	
@@ -40,7 +40,7 @@ if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)
 }
 
 // Ending condition, 130 for debug, 230 for final?
-if (spank_heat > 2 && complete == false) {
+if (spank_heat > 130 && complete == false) {
    // Play Sound
    alarm[8] = room_speed * 1;
    // Go to credits
