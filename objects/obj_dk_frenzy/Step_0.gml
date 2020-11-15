@@ -8,7 +8,7 @@ if vol >= 0 {
 	vol = 0;
 }
 
-global_scr_inputGet(glo_controllerid)
+global_scr_inputGet(glo_controllerid);
 
 if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)  {
 	if frenzy == false {
@@ -40,7 +40,7 @@ if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)
 }
 
 // Ending condition, 130 for debug, 230 for final?
-if (spank_heat > 130 && complete == false) {
+if (spank_heat > 2 && complete == false) {
    // Play Sound
    alarm[8] = room_speed * 1;
    // Go to credits

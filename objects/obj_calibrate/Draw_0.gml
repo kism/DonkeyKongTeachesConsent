@@ -20,3 +20,4 @@ for (i = 0; i < 50; i += 1) {
 }
 
 draw_text(x,y,text);
+
