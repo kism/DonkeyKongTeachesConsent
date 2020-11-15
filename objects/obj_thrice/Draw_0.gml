@@ -10,15 +10,8 @@ draw_set_font(font_Thrice);
 text      = "One!"
 texttwo   = "Two!"
 textthree = "Three!"
-middleishpoint = room_height/2.5
-offset = room_height/4
-
-//draw_set_font(font_UI);
-//text = "Hits: " + string(hits)
-//text = text + "\nLeft  Timer:" + string(buttononecountdown)
-//text = text + "\nRight Timer:" + string(buttontwocountdown)
-//text = text + "\nDebou Timer:" + string(debounce)
-
+middleishpoint = room_height*0.4
+offset = room_height*0.25
 
 depth = 2
 
