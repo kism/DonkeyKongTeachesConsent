@@ -3,7 +3,7 @@
 if ready == true {
 	global_scr_inputGet(glo_controllerid);
 
-	instance_create_depth(0,0,1,obj_dk_inactive)
+	//instance_create_depth(0,0,1,obj_dk_inactive)
 
 	if glo_buttoneraise == true || glo_butttworaise == true {
 		physics_world_gravity(0,60);
