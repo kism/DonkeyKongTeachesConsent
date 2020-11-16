@@ -17,6 +17,4 @@ function global_scr_inputButtonDetect(argument0, argument1) {
 			}
 		}
 	}
-
-
 }
