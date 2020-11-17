@@ -26,11 +26,11 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 		}
 
 		// Set reaction
-		if spank_heat > spank_heat_target * 0.4 {
-			if spanks_now_declining == false {
-				obj_dk_reaction.image_index = 2
-			} else {
+		if spank_heat > (spank_heat_target * 0.4) {
+			if spanks_now_declining == true {
 				obj_dk_reaction.image_index = 1
+			} else {
+				obj_dk_reaction.image_index = 2
 			}
 		} else {
 			if spanks > 2 {
