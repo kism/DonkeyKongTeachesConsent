@@ -15,7 +15,7 @@ offset = room_height*0.25
 
 depth = 2
 
-if  global.glo_calibrationstate != "transition"{
+if  global.calibrationstate != "transition"{
 	if (hits > 0 && hits < 5){
 		draw_text(room_width/8,middleishpoint - offset,text)
 	}
@@ -24,7 +24,7 @@ if  global.glo_calibrationstate != "transition"{
 	}
 	if (hits > 2 && hits < 5){
 		draw_text(room_width/8,middleishpoint + offset,textthree)
-		global.glo_calibrationstate = "transition"
+		global.calibrationstate = "transition"
 		self.alarm[4] = room_speed * 2.2
 	}
 } else {

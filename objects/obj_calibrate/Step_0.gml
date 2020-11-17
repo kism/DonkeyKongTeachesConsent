@@ -1,6 +1,6 @@
 /// @description find controller to be used
 
-if global.glo_calibrationstate != "initial"{
+if global.calibrationstate != "initial"{
 	visible = false
 }
 

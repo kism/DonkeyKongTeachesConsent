@@ -1,6 +1,6 @@
 /// @description fade out
 
 
-if global.glo_fadetogame == true {
+if global.fadetogame == true {
 		instance_deactivate_object(self)
 }

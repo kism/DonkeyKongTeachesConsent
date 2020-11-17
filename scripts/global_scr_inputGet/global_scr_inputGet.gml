@@ -1,24 +1,24 @@
 function global_scr_inputGet(argument0) {
 	dvc = argument0
 
-	buttononestate = gamepad_button_check(dvc,global.glo_buttononemap) || gamepad_button_check(dvc,global.glo_buttononealtmap)
-	buttontwostate = gamepad_button_check(dvc,global.glo_buttontwomap) || gamepad_button_check(dvc,global.glo_buttontwoaltmap)
+	buttononestate = gamepad_button_check(dvc,global.buttononemap) || gamepad_button_check(dvc,global.buttononealtmap)
+	buttontwostate = gamepad_button_check(dvc,global.buttontwomap) || gamepad_button_check(dvc,global.buttontwoaltmap)
 
 
-	if global.glo_buttoneprevstate == false && buttononestate == true {
-		global.glo_buttoneraise = true
+	if global.buttoneprevstate == false && buttononestate == true {
+		global.buttoneraise = true
 	} else {
-		global.glo_buttoneraise = false
+		global.buttoneraise = false
 	}
 
-	if global.glo_butttwoprevstate == false && buttontwostate == true {
-		global.glo_butttworaise = true
+	if global.butttwoprevstate == false && buttontwostate == true {
+		global.butttworaise = true
 	} else {
-		global.glo_butttworaise = false
+		global.butttworaise = false
 	}
 
-	global.glo_buttoneprevstate = buttononestate
-	global.glo_butttwoprevstate = buttontwostate
+	global.buttoneprevstate = buttononestate
+	global.butttwoprevstate = buttontwostate
 
 
 }
