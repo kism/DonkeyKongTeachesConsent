@@ -14,5 +14,4 @@ function scr_dk_playSpank() {
 			break
 	}
 
-
 }

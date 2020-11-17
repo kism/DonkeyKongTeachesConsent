@@ -23,5 +23,4 @@ function scr_dk_playGrunt() {
 			break
 	}
 
-
 }

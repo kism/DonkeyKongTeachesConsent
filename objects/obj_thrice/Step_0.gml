@@ -1,6 +1,5 @@
 /// @description main boye
 
-
 if global.calibrationstate == "calibrated" || global.calibrationstate == "transition"{
 	self.visible = true
 	if global.buttoneraise == true {
@@ -53,6 +52,5 @@ if global.calibrationstate == "transition"{
 		instance_create_layer(self.x, self.y, "Instances", obj_transition)
 	}
 }
-
 
 

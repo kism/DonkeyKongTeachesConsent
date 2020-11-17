@@ -1,7 +1,7 @@
 /// @description list controllers
 
-x = 20
-y = 20
+self.x = 20
+self.y = 20
 
 // Populate
 draw_set_font(font_UI)
@@ -18,5 +18,5 @@ for (i = 0; i < 50; i += 1) {
 	}
 }
 
-draw_text(x,y,text)
+draw_text(self.x, self.y, text)
 

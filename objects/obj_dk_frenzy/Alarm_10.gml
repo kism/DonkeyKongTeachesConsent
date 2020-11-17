@@ -1,5 +1,4 @@
 /// @description Absolutely
-// You can write your code in this editor
 
 // Allow Frenzy
 self.alarm[0] = 1.5 * room_speed

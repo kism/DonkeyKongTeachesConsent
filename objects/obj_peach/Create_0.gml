@@ -1,4 +1,4 @@
-/// @description on spawn
+/// @description on spawn...
 
 if global.calibrationstate != "transitionend" {
 	self.alarm[0] = room_speed * 4

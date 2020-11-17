@@ -1,8 +1,6 @@
 /// @description Revert Reaction after spank, also for checking if spank threshold met for some reason
-// You can write your code in this editor
 
 obj_dk_reaction.image_index = 0
-
 
 // This is the spanks required to continue to the next phase, i think 4 for the final version
 if spanks > 0 {

@@ -1,6 +1,5 @@
 /// @description Fade in depending on heat
 
-
 threshhold = 75
 divisor = 60
 maxalpha = 0.66

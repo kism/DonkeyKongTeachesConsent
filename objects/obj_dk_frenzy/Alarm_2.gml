@@ -11,6 +11,7 @@ if spank_heat_new > spank_heat_min {
 // Update Heat
 spank_heat += (spanks - 1)
 
+//If there were no spanks in the last cycle, start declining
 if spanks == 0 {
 	spank_heat += -7
 	if spanks_now_declining == false {

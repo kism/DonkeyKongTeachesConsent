@@ -17,11 +17,16 @@ spank_heat = 1
 spank_heat_min = 1
 spank_heat_new = 1
 
+// Ending condition, 130 for debug, 230 for final?
+spank_heat_target = 230
 complete = false
+
+if global.prerelease == true {
+	instance_create_layer(room_width * 0.1, room_height * 0.1, "instances", obj_spank_debug) 
+}
 
 // Absolutely spank text
 self.alarm[11] = 1 * room_speed
 
 scr_dk_createfeet()
-
 

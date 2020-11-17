@@ -25,23 +25,29 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 			scr_dk_doSpank(self.x, self.y, "right")
 		}
 
-		// DK has been correctly spanked	
-		if spanks > 3 {
-			obj_dk_reaction.image_index = 2
+		// Set reaction
+		if spank_heat > spank_heat_target * 0.4 {
+			if spanks_now_declining == false {
+				obj_dk_reaction.image_index = 2
+			} else {
+				obj_dk_reaction.image_index = 1
+			}
 		} else {
-			obj_dk_reaction.image_index = 1
+			if spanks > 2 {
+				obj_dk_reaction.image_index = 2
+			} else {
+				obj_dk_reaction.image_index = 1
+			}				
 		}
 		
 		// Play sound and probably dont revert because we are in frenzy
 		scr_dk_playGrunt()
-		// self.alarm[3] = room_speed * 1
 		
 		spanks += 1
 	}
 }
 
-// Ending condition, 130 for debug, 230 for final?
-if (spank_heat > 2 && complete == false) {
+if (spank_heat > spank_heat_target && complete == false) {
    // Play Sound
    self.alarm[8] = room_speed * 1
    // Go to credits
