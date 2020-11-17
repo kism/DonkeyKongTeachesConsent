@@ -80,6 +80,7 @@
     {"id":{"name":"obj_bongos","path":"objects/obj_bongos/obj_bongos.yy",},"order":35,},
     {"id":{"name":"obj_bluebg","path":"objects/obj_bluebg/obj_bluebg.yy",},"order":12,},
     {"id":{"name":"shd_finalseq","path":"shaders/shd_finalseq/shd_finalseq.yy",},"order":0,},
+    {"id":{"name":"spr_pre_release","path":"sprites/spr_pre_release/spr_pre_release.yy",},"order":28,},
     {"id":{"name":"obj_bluebg_not_actually_fg","path":"objects/obj_bluebg_not_actually_fg/obj_bluebg_not_actually_fg.yy",},"order":13,},
     {"id":{"name":"obj_shadercontrol","path":"objects/obj_shadercontrol/obj_shadercontrol.yy",},"order":33,},
     {"id":{"name":"obj_startgame","path":"objects/obj_startgame/obj_startgame.yy",},"order":14,},

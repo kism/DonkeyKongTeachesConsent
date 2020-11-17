@@ -8,7 +8,7 @@ function scr_dk_doSpank(inx,iny,inCheek){
 		instance_create_layer(inx - room_width*0.09,iny + room_width*0.13,"Instances",obj_spank_left)
 		scr_dk_playSpank()
 	}
-	//Spank right cheek
+	// Spank right cheek
 	if inCheek == "right" {
 		instance_create_layer(inx - room_width*0.02,iny + room_width*0.13,"Instances",obj_spank_right)
 		scr_dk_playSpank()

@@ -3,7 +3,7 @@
 x = 20
 y = 20
 
-//Populate
+// Populate
 draw_set_font(font_UI)
 
 foundone = false
@@ -14,7 +14,7 @@ for (i = 0; i < 50; i += 1) {
 		foundone = true
 		text = text + " " + gamepad_get_description(i) + "\n" 
 	} else {
-		//text = text + string(i) + ": Not found!" + "\n"
+		// text = text + string(i) + ": Not found!" + "\n"
 	}
 }
 

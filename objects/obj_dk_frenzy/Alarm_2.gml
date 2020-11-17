@@ -1,6 +1,6 @@
 /// @description Spank Acceleration
 
-//This some spank math
+// This some spank math
 
 spank_heat_new = (spank_heat - (spank_heat / 2))
 
@@ -8,7 +8,7 @@ if spank_heat_new > spank_heat_min {
 	spank_heat_min = spank_heat_new	
 }
 
-//Update Heat
+// Update Heat
 spank_heat += (spanks - 1)
 
 if spanks == 0 {
@@ -20,12 +20,12 @@ if spanks == 0 {
 	spanks_now_declining = false
 }
 
-//Don't hit zero
+// Don't hit zero
 if spank_heat < spank_heat_min {
 	spank_heat = spank_heat_min	
 }
 
 spanks = 0
 
-//Make sure this is the last line lol
+// Make sure this is the last line lol
 self.alarm[2] = room_speed * 0.6

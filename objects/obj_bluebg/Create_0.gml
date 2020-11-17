@@ -2,4 +2,4 @@
 
 image_alpha = 0.75
 
-//fadeout = false
+// fadeout = false

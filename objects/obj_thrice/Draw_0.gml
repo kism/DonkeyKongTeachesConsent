@@ -1,9 +1,9 @@
 /// @description Text
 
-//xo = room_width/4
+// xo = room_width/4
 y = room_height * 0.5
 
-//Populate
+// Populate
 
 draw_set_font(font_Thrice)
 

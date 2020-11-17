@@ -1,6 +1,6 @@
 /// @description Steppy & DK been spanked
 
-//This isnt future proof lol Kieran
+// This isnt future proof lol Kieran
 if vol >= 0 {
 	vol -= 0.005
     audio_sound_gain(msc_aquatic, vol,0)
@@ -14,18 +14,18 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 	if frenzy == false {
 		self.alarm[1] = 0.5 * room_speed
 	} else { 
-		//Spank left cheek	
+		// Spank left cheek	
 		if global.buttoneraise == true {
-			//instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left)
+			// instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left)
 			scr_dk_doSpank(self.x, self.y, "left")
 		}
-		//Spank right cheek
+		// Spank right cheek
 		if global.butttworaise == true {
-			//instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right)
+			// instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right)
 			scr_dk_doSpank(self.x, self.y, "right")
 		}
 
-		//DK has been correctly spanked	
+		// DK has been correctly spanked	
 		if spanks > 3 {
 			obj_dk_reaction.image_index = 2
 		} else {
@@ -34,7 +34,7 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 		
 		// Play sound and probably dont revert because we are in frenzy
 		scr_dk_playGrunt()
-		//self.alarm[3] = room_speed * 1
+		// self.alarm[3] = room_speed * 1
 		
 		spanks += 1
 	}

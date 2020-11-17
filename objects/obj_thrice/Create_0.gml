@@ -5,5 +5,5 @@ buttononecountdown = false
 buttontwocountdown = false
 debounce = false
 
-//lmao
+// lmao
 endgame = false

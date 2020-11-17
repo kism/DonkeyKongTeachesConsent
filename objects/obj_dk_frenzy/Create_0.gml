@@ -1,7 +1,7 @@
 /// @description Init
 
-//image_alpha = 0.75
-//self.image_alpha = 1 //placeholder to indicate this phase
+// image_alpha = 0.75
+// self.image_alpha = 1 // placeholder to indicate this phase
 self.image_index = 0
 self.x = room_width * 0.37
 self.y = room_height * 0.385
@@ -19,7 +19,7 @@ spank_heat_new = 1
 
 complete = false
 
-//Absolutely spank text
+// Absolutely spank text
 self.alarm[11] = 1 * room_speed
 
 scr_dk_createfeet()
