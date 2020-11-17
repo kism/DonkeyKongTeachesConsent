@@ -24,6 +24,13 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 			// instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right)
 			scr_dk_doSpank(self.x, self.y, "right")
 		}
+		
+		// I think this is safe to assume but still
+		if instance_exists(obj_dk_reaction_big) {
+			obj_dk_reaction_big.image_xscale = 1.02
+			obj_dk_reaction_big.image_yscale = 1.02
+			self.alarm[1] = 0.05 * room_speed;
+		}
 
 		// Play sound and probably dont revert because we are in frenzy
 		scr_dk_playGrunt()
