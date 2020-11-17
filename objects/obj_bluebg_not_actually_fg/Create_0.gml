@@ -1,5 +1,5 @@
 /// @description set transparency
 
-depth = 99;
+depth = 99
 
-fadeout = false;
+fadeout = false

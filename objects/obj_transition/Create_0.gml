@@ -1,4 +1,4 @@
 /// @description init
 
-visible = true
-depth = 1
+self.visible = true
+self.depth = 1

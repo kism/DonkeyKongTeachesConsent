@@ -2,68 +2,68 @@
 
 //This isnt future proof lol Kieran
 if vol >= 0 {
-	vol -= 0.005;
-    audio_sound_gain(msc_aquatic, vol,0);
+	vol -= 0.005
+    audio_sound_gain(msc_aquatic, vol,0)
 } else {
-	vol = 0;
+	vol = 0
 }
 
-global_scr_inputGet(glo_controllerid);
+global_scr_inputGet(glo_controllerid)
 
 if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)  {
 	if frenzy == false {
-		alarm[1] = 0.5 * room_speed;
+		self.alarm[1] = 0.5 * room_speed
 	} else { 
 		//Spank left cheek	
 		if glo_buttoneraise == true {
-			//instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left);
-			scr_dk_doSpank(self.x,self.y,"left")
+			//instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left)
+			scr_dk_doSpank(self.x, self.y, "left")
 		}
 		//Spank right cheek
 		if glo_butttworaise == true {
-			//instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right);
-			scr_dk_doSpank(self.x,self.y,"right")
+			//instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right)
+			scr_dk_doSpank(self.x, self.y, "right")
 		}
 
 		//DK has been correctly spanked	
 		if spanks > 3 {
-			obj_dk_reaction.image_index = 2;
+			obj_dk_reaction.image_index = 2
 		} else {
-			obj_dk_reaction.image_index = 1;
+			obj_dk_reaction.image_index = 1
 		}
 		
-		scr_dk_playGrunt();
-		alarm[3] = room_speed * 1;
+		// Play sound and probably dont revert because we are in frenzy
+		scr_dk_playGrunt()
+		//self.alarm[3] = room_speed * 1
 		
-		spanks += 1;
+		spanks += 1
 	}
 }
 
 // Ending condition, 130 for debug, 230 for final?
 if (spank_heat > 2 && complete == false) {
    // Play Sound
-   alarm[8] = room_speed * 1;
+   self.alarm[8] = room_speed * 1
    // Go to credits
-   alarm[9] = room_speed * 6.5;
+   self.alarm[9] = room_speed * 6.5
    
    	// Should always be true at this point in time
 	if (audio_is_playing(msc_rambi)) {
-		audio_sound_gain(msc_rambi, 0,0.5);
+		audio_sound_gain(msc_rambi, 0, 0.5)
 	}
 	if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
-		instance_deactivate_object(obj_shadercontrol);
+		instance_deactivate_object(obj_shadercontrol)
 	}
-	
-   complete = true;
+   complete = true
 }
 
 // Music Control
-if (spank_heat > 1) && (!(audio_is_playing(msc_rambi))) {
-	audio_play_sound(msc_rambi,1,0);
+if ((spank_heat > 1) && (!(audio_is_playing(msc_rambi)))) {
+	audio_play_sound(msc_rambi, 1, 0)
 }
 
 if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
-	instance_create_layer(0,0,"Instances",obj_shadercontrol);
+	instance_create_layer(0, 0, "Instances", obj_shadercontrol)
 }
 
 // Spawn meta fruit
@@ -78,5 +78,5 @@ if (complete == false && frenzy == true) {
 }
 
 if complete == true {
-   obj_dk_reaction.image_index = 1;	
+   obj_dk_reaction.image_index = 1	
 }

@@ -1,14 +1,12 @@
 /// @description Init
-// You can write your code in this editor
 
-depth = -1;
-obj_credits_text.image_alpha = 0;
-obj_credits_text.image_index = 0;
+self.depth = -1
+self.image_alpha = 0
+self.image_index = 0
 
+//This is absolutely required for the correct physics and sounds to be made
+glo_calibrationstate = "bepis"
 
-glo_calibrationstate = "pepsi";
-
-//okay for exit
-exitready = false;
-
-alarm[0] = 5 * room_speed;
+//okay for exit, set alarm that will set to true
+exitready = false
+self.alarm[0] = 5 * room_speed

@@ -1,3 +1,3 @@
 /// @description Ready to exit
 
-exitready = true;
+exitready = true

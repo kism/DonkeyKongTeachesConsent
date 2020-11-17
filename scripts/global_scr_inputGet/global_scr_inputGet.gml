@@ -1,5 +1,5 @@
 function global_scr_inputGet(argument0) {
-	dvc = argument0;
+	dvc = argument0
 
 	buttononestate = gamepad_button_check(dvc,glo_buttononemap) || gamepad_button_check(dvc,glo_buttononealtmap)
 	buttontwostate = gamepad_button_check(dvc,glo_buttontwomap) || gamepad_button_check(dvc,glo_buttontwoaltmap)

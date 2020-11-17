@@ -1,4 +1,4 @@
 /// @description Init
 
-image_alpha = 0;
-depth = -100
+self.image_alpha = 0
+self.depth = -100
