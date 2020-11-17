@@ -1,13 +1,13 @@
 /// @description main boye
 
 
-if glo_calibrationstate == "calibrated" || glo_calibrationstate == "transition"{
+if global.glo_calibrationstate == "calibrated" || global.glo_calibrationstate == "transition"{
 	self.visible = true
-	if glo_buttoneraise == true {
+	if global.glo_buttoneraise == true {
 		self.alarm[0] = room_speed * 0.06
 		buttononecountdown = true
 	}
-	if glo_butttworaise == true {
+	if global.glo_butttworaise == true {
 		self.alarm[1] = room_speed * 0.06
 		buttontwocountdown = true
 	}
@@ -44,7 +44,7 @@ if glo_calibrationstate == "calibrated" || glo_calibrationstate == "transition"{
 	self.visible = false
 }
 
-if glo_calibrationstate == "transition"{
+if global.glo_calibrationstate == "transition"{
 	if !instance_exists(obj_transition){
 		self.alarm[4] = room_speed * 1.0
 		self.alarm[5] = room_speed * 3.0

@@ -1,6 +1,6 @@
 /// @description on spawn
 
-if glo_calibrationstate != "transitionend" {
+if global.glo_calibrationstate != "transitionend" {
 	self.alarm[0] = room_speed * 4
 	self.phy_rotation = random_range(-179, 179)
 	self.depth = 0

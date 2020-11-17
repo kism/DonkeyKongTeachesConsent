@@ -8,19 +8,19 @@ if vol >= 0 {
 	vol = 0
 }
 
-global_scr_inputGet(glo_controllerid)
+global_scr_inputGet(global.glo_controllerid)
 
-if ((glo_buttoneraise == true || glo_butttworaise == true) && complete == false)  {
+if ((global.glo_buttoneraise == true || global.glo_butttworaise == true) && complete == false)  {
 	if frenzy == false {
 		self.alarm[1] = 0.5 * room_speed
 	} else { 
 		//Spank left cheek	
-		if glo_buttoneraise == true {
+		if global.glo_buttoneraise == true {
 			//instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left)
 			scr_dk_doSpank(self.x, self.y, "left")
 		}
 		//Spank right cheek
-		if glo_butttworaise == true {
+		if global.glo_butttworaise == true {
 			//instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right)
 			scr_dk_doSpank(self.x, self.y, "right")
 		}
