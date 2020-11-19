@@ -3,7 +3,7 @@
 function scr_doOrbit(inAngle){
 	result = []
 	
-	radius = 650
+	radius = 900
 		
 	// Update position
 	result[0] = lengthdir_x(radius, inAngle) + obj_dk_reaction_big.x

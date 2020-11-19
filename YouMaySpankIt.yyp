@@ -43,6 +43,7 @@
     {"id":{"name":"snd_dk_grunt2","path":"sounds/snd_dk_grunt2/snd_dk_grunt2.yy",},"order":9,},
     {"id":{"name":"snd_dk_grunt3","path":"sounds/snd_dk_grunt3/snd_dk_grunt3.yy",},"order":10,},
     {"id":{"name":"snd_dk_grunt4","path":"sounds/snd_dk_grunt4/snd_dk_grunt4.yy",},"order":11,},
+    {"id":{"name":"scr_goToOrbit","path":"scripts/scr_goToOrbit/scr_goToOrbit.yy",},"order":9,},
     {"id":{"name":"snd_dk_grunt5","path":"sounds/snd_dk_grunt5/snd_dk_grunt5.yy",},"order":12,},
     {"id":{"name":"spr_dk_reaction_big","path":"sprites/spr_dk_reaction_big/spr_dk_reaction_big.yy",},"order":29,},
     {"id":{"name":"snd_dk_grunt6","path":"sounds/snd_dk_grunt6/snd_dk_grunt6.yy",},"order":13,},

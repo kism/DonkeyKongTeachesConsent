@@ -1,7 +1,6 @@
 /// @description Move to orbital point
 
 if (obj_dk_frenzy.spank_heat > (obj_dk_frenzy.spank_heat_target * 0.6)) {
-	self.phy_active = true
 	
 	// Orbit
 	angle += room_width * 0.00042 * (60 / room_speed)
@@ -11,8 +10,8 @@ if (obj_dk_frenzy.spank_heat > (obj_dk_frenzy.spank_heat_target * 0.6)) {
 
 	xytarget = scr_doOrbit(angle)
 	
-	dir = point_direction(x,y,xytarget[0], xytarget[1])
-	phy_speed_x = lengthdir_x(2,dir)
-	phy_speed_y = lengthdir_y(2,dir)
-	
+	xyarr = scr_goToOrbit(self.x, self.y, xytarget)
+
+	self.x = xyarr[0]
+	self.y = xyarr[1]
 }
