@@ -64,6 +64,7 @@
     {"id":{"name":"font_UI","path":"fonts/font_UI/font_UI.yy",},"order":0,},
     {"id":{"name":"scr_dk_doSpank","path":"scripts/scr_dk_doSpank/scr_dk_doSpank.yy",},"order":6,},
     {"id":{"name":"font_Thrice","path":"fonts/font_Thrice/font_Thrice.yy",},"order":1,},
+    {"id":{"name":"scr_get_final_fadeout","path":"scripts/scr_get_final_fadeout/scr_get_final_fadeout.yy",},"order":10,},
     {"id":{"name":"font_Calibration","path":"fonts/font_Calibration/font_Calibration.yy",},"order":2,},
     {"id":{"name":"msc_rambi","path":"sounds/msc_rambi/msc_rambi.yy",},"order":19,},
     {"id":{"name":"obj_meta","path":"objects/obj_meta/obj_meta.yy",},"order":0,},

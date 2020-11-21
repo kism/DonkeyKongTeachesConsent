@@ -10,5 +10,5 @@ divisor = 35
 maxalpha = 0.75
 
 // Orbit
-angle = 0; 
-currentSpeed = 20
+orbit = false
+angle = 0

@@ -9,6 +9,7 @@ divisor = 80
 maxalpha = 0.75
 
 // Orbit
+orbit = false
 angle = 240
 
 
