@@ -39,13 +39,13 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 }
 
 // Spank reaction is now dependent on spank acceleration instead of a spank
-if spank_heat > (spank_heat_target * 0.4) {
+if (spank_heat > (spank_heat_target * 0.4)) && complete == false {
 	if spanks_now_declining == true {
 		obj_dk_reaction.image_index = 1
 	} else {
 		obj_dk_reaction.image_index = 2
 	}
-} else {
+} else if complete == false{
 	if spanks > 2 {
 		obj_dk_reaction.image_index = 2
 	} else {
@@ -67,7 +67,8 @@ if (spank_heat > spank_heat_target && complete == false) {
 	if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
 		instance_deactivate_object(obj_shadercontrol)
 	}
-   complete = true
+	obj_dk_reaction.image_index = 1	
+	complete = true
 }
 
 // Music Control
@@ -88,8 +89,4 @@ if (complete == false && frenzy == true) {
 			instance_create_layer(room_width + room_width / 10, random_range(0,room_height / 2),"Instances",obj_final_fruit)
 		}
 	}
-}
-
-if complete == true {
-   obj_dk_reaction.image_index = 1	
 }

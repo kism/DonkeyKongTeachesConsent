@@ -22,7 +22,7 @@ spanks_now_declining = false
 spank_heat_target = 230
 complete = false
 
-if global.prerelease == true {
+if global.debug == true {
 	instance_create_layer(room_width * 0.1, room_height * 0.1, "instances", obj_spank_debug) 
 }
 
@@ -30,4 +30,3 @@ if global.prerelease == true {
 self.alarm[11] = 1 * room_speed
 
 scr_dk_createfeet()
-
