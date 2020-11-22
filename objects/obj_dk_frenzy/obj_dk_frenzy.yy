@@ -31,6 +31,7 @@
     {"isDnD":false,"eventNum":10,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_dk_frenzy","path":"objects/obj_dk_frenzy/obj_dk_frenzy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_dk_frenzy","path":"objects/obj_dk_frenzy/obj_dk_frenzy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":7,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_dk_frenzy","path":"objects/obj_dk_frenzy/obj_dk_frenzy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":6,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_dk_frenzy","path":"objects/obj_dk_frenzy/obj_dk_frenzy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

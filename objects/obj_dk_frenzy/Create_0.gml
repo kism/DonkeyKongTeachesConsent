@@ -19,8 +19,11 @@ spank_heat_new = 1
 spanks_now_declining = false
 
 // Ending condition, 130 for debug, 230 for final?
-spank_heat_target = 230
+spank_heat_target = 100
 complete = false
+
+// Misc ending
+fadeoutbigraction = false
 
 if global.debug == true {
 	instance_create_layer(room_width * 0.1, room_height * 0.1, "instances", obj_spank_debug) 

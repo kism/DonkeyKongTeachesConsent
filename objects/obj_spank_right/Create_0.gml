@@ -9,4 +9,4 @@ if instance_exists(obj_dk_main) {
 
 self.depth = -10
 
-instance_create_depth(self.x, self.y, -9, obj_star)
+instance_create_depth(self.x + room_width * 0.01, self.y + room_height * 0.01, -9, obj_star)

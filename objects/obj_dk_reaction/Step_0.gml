@@ -7,7 +7,9 @@ if !(instance_exists(obj_dk_frenzy)) {
 } else {
 	self.image_alpha = scr_get_final_fadeout(self.image_alpha)
 	
-	//Puppet the big reaction
-	obj_dk_reaction_big.image_index = self.image_index
-	obj_dk_reaction_big.image_alpha = 1 - self.image_alpha
+	if instance_exists(obj_dk_reaction_big) {
+		//Puppet the big reaction
+		obj_dk_reaction_big.image_index = self.image_index
+		obj_dk_reaction_big.image_alpha = 1 - self.image_alpha
+	}
 }
