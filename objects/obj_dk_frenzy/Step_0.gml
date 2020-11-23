@@ -64,9 +64,6 @@ if (spank_heat > spank_heat_target && complete == false) {
 	if (audio_is_playing(msc_rambi)) {
 		audio_sound_gain(msc_rambi, 0, 0.5)
 	}
-	if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
-		instance_deactivate_object(obj_shadercontrol)
-	}
 	obj_dk_reaction.image_index = 1	
 	complete = true
 }
@@ -76,7 +73,7 @@ if ((spank_heat > 1) && (!(audio_is_playing(msc_rambi)))) {
 	audio_play_sound(msc_rambi, 1, 0)
 }
 
-if (!(instance_exists(obj_shadercontrol))) && (spank_heat > 50) {
+if (!(instance_exists(obj_shadercontrol))) && (spank_heat > (spank_heat_target * 0.45)) {
 	instance_create_layer(0, 0, "Instances", obj_shadercontrol)
 }
 
