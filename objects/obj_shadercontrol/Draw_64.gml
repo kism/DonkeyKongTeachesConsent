@@ -1,7 +1,5 @@
 /// @description Insert description here
 
-
-
 if instance_exists(obj_dk_frenzy) {
 	if obj_dk_frenzy.complete == true {
 		instance_deactivate_object(self)	
