@@ -3,18 +3,18 @@
 if global.calibrationstate == "calibrated" || global.calibrationstate == "transition"{
 	self.visible = true
 	if global.buttoneraise == true {
-		self.alarm[0] = room_speed * 0.06
+		self.alarm[0] = room_speed * 0.09 // Sensitivity of registering two buttons pressed
 		buttononecountdown = true
 	}
 	if global.butttworaise == true {
-		self.alarm[1] = room_speed * 0.06
+		self.alarm[1] = room_speed * 0.09 // Sensitivity of registering two buttons pressed
 		buttontwocountdown = true
 	}
 	if  buttononecountdown && buttontwocountdown && debounce == false{
 		debounce = true
 		hits += 1
-		self.alarm[2] = room_speed * 0.1
-		self.alarm[3] = room_speed * 0.5
+		self.alarm[2] = room_speed * 0.10 // Debounce
+		self.alarm[3] = room_speed * 0.75 // Reset the thrice
 		show_debug_message(string(hits))
 		
 		if hits == 1 {
