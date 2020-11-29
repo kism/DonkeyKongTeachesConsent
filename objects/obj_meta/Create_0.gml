@@ -24,8 +24,8 @@ global.fadetogame = "false"
 // - - - - - - - - - - - - - - - - - - - - 
 
 // Prerelease, set to false for release
-global.prerelease = false
-global.debug = false
+global.prerelease = true
+global.debug = true
 
 if global.prerelease == false {
 	self.visible = false	

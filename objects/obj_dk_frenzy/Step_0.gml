@@ -18,11 +18,13 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 		if global.buttoneraise == true {
 			// instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left)
 			scr_dk_doSpank(self.x, self.y, "left")
+			spanks += 1
 		}
 		// Spank right cheek
 		if global.butttworaise == true {
 			// instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right)
 			scr_dk_doSpank(self.x, self.y, "right")
+			spanks += 1
 		}
 		
 		// I think this is safe to assume but still
@@ -34,7 +36,13 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 
 		// Play sound and probably dont revert because we are in frenzy
 		scr_dk_playGrunt()
-		spanks += 1
+		
+		// Little extra for spank heat
+		if spank_heat_min < (spank_heat_target * 0.40) {
+			spank_heat_min += 0.25
+		} else {
+			spank_heat_min += 1.39
+		}
 	}
 }
 
