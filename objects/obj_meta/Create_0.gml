@@ -12,6 +12,9 @@ global.butttworaise     = false
 global.butttwoprevstate = false
 global.buttontwomap     = -1
 global.buttontwoaltmap  = -1
+// Hack in multipress
+global.buttonemulti = false
+global.butttwomulti = false
 
 // States
 global.failstate = false
