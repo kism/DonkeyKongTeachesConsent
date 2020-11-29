@@ -30,6 +30,6 @@ if global.debug == true {
 }
 
 // Absolutely spank text
-self.alarm[11] = 1 * room_speed
+self.alarm[11] = 5 * room_speed
 
 scr_dk_createfeet()

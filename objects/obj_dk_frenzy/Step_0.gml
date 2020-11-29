@@ -39,7 +39,9 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 }
 
 // Spank reaction is now dependent on spank acceleration instead of a spank
-if (spank_heat > (spank_heat_target * 0.4)) && complete == false {
+if frenzy == false && complete == false {
+	obj_dk_reaction.image_index = 0
+} else if (spank_heat > (spank_heat_target * 0.4)) && complete == false {
 	if spanks_now_declining == true {
 		obj_dk_reaction.image_index = 1
 	} else {

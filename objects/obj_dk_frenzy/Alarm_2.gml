@@ -3,8 +3,8 @@
 // This some spank math
 
 // Set max spanks per cycle
-if spanks > 6 {
-	spanks = 6	
+if spanks > 5 {
+	spanks = 5	
 }
 
 spank_heat_new = (spank_heat - (spank_heat / 2))
