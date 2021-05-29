@@ -1,7 +1,5 @@
 /// @description Init
 
-// image_alpha = 0.75
-// self.image_alpha = 1 // placeholder to indicate this phase
 self.image_index = 0
 self.x = room_width * 0.37
 self.y = room_height * 0.385
@@ -18,6 +16,9 @@ spank_heat_min = 1
 spank_heat_new = 1
 spanks_now_declining = false
 spanks_max_per_cycle = 5
+
+// var to count spank acceleration cycles the player hasnt spanked
+cycles_without_spanks = 0
 
 // Ending condition, 130 for debug, 230 for final?
 spank_heat_target = 230

@@ -21,6 +21,12 @@ if spanks == 0 {
 	spank_heat += -7
 	if spanks_now_declining == false {
 		spanks_now_declining = true
+		cycles_without_spanks  = 0
+   } else {
+		// Prevent an integer overflow kappa
+		if cycles_without_spanks < 100 { 
+			cycles_without_spanks += 1
+	   }
    }
 } else {
 	spanks_now_declining = false
