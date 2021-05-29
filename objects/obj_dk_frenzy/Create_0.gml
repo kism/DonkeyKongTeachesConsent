@@ -25,7 +25,7 @@ spank_heat_target = 230
 complete = false
 
 // Create Spankmeter layer
-instance_create_layer(room_width * 0.5, room_height * 0.05, "instances", obj_spankmeter_bg) 
+instance_create_layer(0, 0, "instances", obj_spankmeter_bg) 
 
 // Misc ending
 fadeoutbigraction = false

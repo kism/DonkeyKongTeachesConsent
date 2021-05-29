@@ -8,7 +8,11 @@ if instance_exists(obj_dk_frenzy) {
 	// so that the game isnt over too quickly if many people are mashing on one controller (sorry speedrunners).
 	// I grab the spanks in the spank cycle and then subtract any over the maximum per cycle.
 
-	extraspanks = obj_dk_frenzy.spanks - obj_dk_frenzy.spanks_max_per_cycle
+	if obj_dk_frenzy.spanks > obj_dk_frenzy.spanks_max_per_cycle {
+		extraspanks = obj_dk_frenzy.spanks_max_per_cycle
+	} else {
+		extraspanks = obj_dk_frenzy.spanks
+	}	
 
 	target = ((obj_dk_frenzy.spank_heat + extraspanks / obj_dk_frenzy.spank_heat_target) * obj_spankmeter_bg.sprite_width)
 

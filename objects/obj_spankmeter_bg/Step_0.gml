@@ -6,8 +6,8 @@ if instance_exists(obj_dk_frenzy) {
 	}	
 
 	// So this will controlo the fade in if the player hasnt spanked for a while
-	if self.image_alpha < 1 && fadein == true && fadeout == false {
-		self.image_alpha += 0.01
+	if self.y < room_height * 0.05 && fadein == true && fadeout == false {
+		self.y += abs(room_height * 0.05 - self.y) * 0.01
 	}
 
 	// Fadeout if frenzy is complete
