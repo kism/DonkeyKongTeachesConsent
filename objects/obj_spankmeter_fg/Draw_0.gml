@@ -1,20 +1,26 @@
 /// @description yeah I think this should go in the draw layer
 
-// So as you may know, spanks are tallied every second? or something so I can figure out the spank acceleration
-// Issue is that the spanks in every acceleration cycle dont get captured since they arent added to spank_heat
-// at the end of each spank acceleration cycle.
-// I could simply add the two together but I set maximum spanks per cycle (that are actually counted)
-// so that the game isnt over too quickly if many people are mashing on one controller (sorry speedrunners).
-// I grab the spanks in the spank cycle and then subtract any over the maximum per cycle.
+if instance_exists(obj_dk_frenzy) {
+	// So as you may know, spanks are tallied every second? or something so I can figure out the spank acceleration
+	// Issue is that the spanks in every acceleration cycle dont get captured since they arent added to spank_heat
+	// at the end of each spank acceleration cycle.
+	// I could simply add the two together but I set maximum spanks per cycle (that are actually counted)
+	// so that the game isnt over too quickly if many people are mashing on one controller (sorry speedrunners).
+	// I grab the spanks in the spank cycle and then subtract any over the maximum per cycle.
 
-extraspanks = obj_dk_frenzy.spanks - obj_dk_frenzy.spanks_max_per_cycle
+	extraspanks = obj_dk_frenzy.spanks - obj_dk_frenzy.spanks_max_per_cycle
 
-target = ((obj_dk_frenzy.spank_heat + extraspanks / obj_dk_frenzy.spank_heat_target) * obj_spankmeter_bg.sprite_width)
+	target = ((obj_dk_frenzy.spank_heat + extraspanks / obj_dk_frenzy.spank_heat_target) * obj_spankmeter_bg.sprite_width)
 
-if (spankness < target) {
-	spankness += abs(spankness - target) * 0.04
-} else {
-	spankness -= abs(spankness - target) * 0.04
+	if (spankness < target) {
+		spankness += abs(spankness - target) * 0.04
+	} else {
+		spankness -= abs(spankness - target) * 0.04
+	}
+
+	if obj_dk_frenzy.complete == true {
+		spankness = obj_spankmeter_bg.sprite_width
+	}
+	
+	draw_sprite_part(spr_spankmeter_fg, 0, 0, 0, spankness, obj_spankmeter_bg.sprite_height, (obj_spankmeter_bg.x - obj_spankmeter_bg.sprite_width / 2), (obj_spankmeter_bg.y - obj_spankmeter_bg.sprite_height / 2))
 }
-
-draw_sprite_part(spr_spankmeter_fg, 0, 0, 0, spankness, obj_spankmeter_bg.sprite_height, (obj_spankmeter_bg.x - obj_spankmeter_bg.sprite_width / 2), (obj_spankmeter_bg.y - obj_spankmeter_bg.sprite_height / 2))
