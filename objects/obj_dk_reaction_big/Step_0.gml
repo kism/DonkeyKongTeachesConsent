@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description steppie
 
 if fadeout == true {
 	if self.image_alpha > 0 {
