@@ -1,6 +1,15 @@
 /// @description yeah I think this should go in the draw layer
 
-target = ((obj_dk_frenzy.spank_heat / obj_dk_frenzy.spank_heat_target) * obj_spankmeter_bg.sprite_width)
+// So as you may know, spanks are tallied every second? or something so I can figure out the spank acceleration
+// Issue is that the spanks in every acceleration cycle dont get captured since they arent added to spank_heat
+// at the end of each spank acceleration cycle.
+// I could simply add the two together but I set maximum spanks per cycle (that are actually counted)
+// so that the game isnt over too quickly if many people are mashing on one controller (sorry speedrunners).
+// I grab the spanks in the spank cycle and then subtract any over the maximum per cycle.
+
+extraspanks = obj_dk_frenzy.spanks - obj_dk_frenzy.spanks_max_per_cycle
+
+target = ((obj_dk_frenzy.spank_heat + extraspanks / obj_dk_frenzy.spank_heat_target) * obj_spankmeter_bg.sprite_width)
 
 if (spankness < target) {
 	spankness += abs(spankness - target) * 0.04

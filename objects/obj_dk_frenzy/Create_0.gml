@@ -17,6 +17,7 @@ spank_heat = 1
 spank_heat_min = 1
 spank_heat_new = 1
 spanks_now_declining = false
+spanks_max_per_cycle = 5
 
 // Ending condition, 130 for debug, 230 for final?
 spank_heat_target = 230
