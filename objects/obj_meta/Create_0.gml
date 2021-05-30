@@ -23,8 +23,10 @@ global.fadetogame = "false"
 
 // - - - - - - - - - - - - - - - - - - - - 
 
-// Prerelease, set to false for release
+// Prerelease, sets the prerelease watermark
 global.prerelease = true
+// The debug parameter will shown the debug hud during the frenzy
+// plus make the main phase only require one spank
 global.debug = true
 
 if global.prerelease == false {
