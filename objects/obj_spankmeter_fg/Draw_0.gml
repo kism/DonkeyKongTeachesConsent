@@ -12,9 +12,9 @@ if instance_exists(obj_dk_frenzy) {
 		extraspanks = obj_dk_frenzy.spanks_max_per_cycle
 	} else {
 		extraspanks = obj_dk_frenzy.spanks
-	}	
+	}
 
-	target = ((obj_dk_frenzy.spank_heat + extraspanks / obj_dk_frenzy.spank_heat_target) * obj_spankmeter_bg.sprite_width)
+	target = (((obj_dk_frenzy.spank_heat + extraspanks) / obj_dk_frenzy.spank_heat_target) * obj_spankmeter_bg.sprite_width)
 
 	if (spankness < target) {
 		spankness += abs(spankness - target) * 0.04
@@ -22,9 +22,10 @@ if instance_exists(obj_dk_frenzy) {
 		spankness -= abs(spankness - target) * 0.04
 	}
 
-	if obj_dk_frenzy.complete == true {
-		spankness = obj_spankmeter_bg.sprite_width
-	}
+//	if obj_dk_frenzy.complete == true {
+//		spankness = obj_spankmeter_bg.sprite_width
+//	}
 	
-	draw_sprite_part(spr_spankmeter_fg, 0, 0, 0, spankness, obj_spankmeter_bg.sprite_height, (obj_spankmeter_bg.x - obj_spankmeter_bg.sprite_width / 2), (obj_spankmeter_bg.y - obj_spankmeter_bg.sprite_height / 2))
+	//draw_sprite_part(spr_spankmeter_fg, 0, 0, 0, spankness, obj_spankmeter_bg.sprite_height, (obj_spankmeter_bg.x - obj_spankmeter_bg.sprite_width / 2), (obj_spankmeter_bg.y - obj_spankmeter_bg.sprite_height / 2))
+	draw_sprite_part_ext(spr_spankmeter_fg, 0, 0, 0, spankness, obj_spankmeter_bg.sprite_height, (obj_spankmeter_bg.x - obj_spankmeter_bg.sprite_width / 2), (obj_spankmeter_bg.y - obj_spankmeter_bg.sprite_height / 2), 1, 1, c_white, obj_spankmeter_bg.image_alpha)
 }

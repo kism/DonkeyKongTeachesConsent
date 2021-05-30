@@ -33,5 +33,8 @@ if instance_exists(obj_dk_frenzy) {
 		text = text + "false" + "\n" 
 	}
 	
+	text = text + "Spankmeter target:    " + string(obj_spankmeter_fg.target) + "\n"
+	text = text + "Spankmeter spankness: " + string(obj_spankmeter_fg.spankness) + "\n"
+	
 	draw_text(self.x, self.y, text)
 }
