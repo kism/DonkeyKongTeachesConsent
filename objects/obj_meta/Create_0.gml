@@ -27,7 +27,7 @@ global.fadetogame = "false"
 global.prerelease = true
 // The debug parameter will shown the debug hud during the frenzy
 // plus make the main phase only require one spank
-global.debug = true
+global.debug = false
 
 if global.prerelease == false {
 	self.visible = false	
