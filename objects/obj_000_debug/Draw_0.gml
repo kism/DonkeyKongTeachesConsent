@@ -3,6 +3,8 @@
 // Set this global in the meta object
 if global.debug != true {
 	instance_deactivate_object(self)
+} else {
+	self.visible = true
 }
 
 text = "- DEBUG -" + "\n"
