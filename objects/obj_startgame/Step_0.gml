@@ -24,6 +24,6 @@ if startgame == true {
 	global.fadetogame = true
 	if audio_sound_get_gain(msc_schoolhouse) == 1 {
 		audio_sound_gain(msc_schoolhouse, 0, 5000)
-		self.alarm[1] = room_speed * 5
+		self.alarm[1] = room_speed * delay_to_start_game
 	}
 }
