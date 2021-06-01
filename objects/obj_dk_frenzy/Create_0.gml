@@ -30,10 +30,6 @@ instance_create_layer(0, 0, "instances", obj_spankmeter_bg)
 // Misc ending
 fadeoutbigraction = false
 
-if global.debug == true {
-	instance_create_layer(room_width * 0.1, room_height * 0.1, "instances", obj_spank_debug) 
-}
-
 // Absolutely spank text
 self.alarm[11] = 5 * room_speed
 

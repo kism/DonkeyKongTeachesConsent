@@ -41,7 +41,7 @@
     {"id":{"name":"msc_aquatic","path":"sounds/msc_aquatic/msc_aquatic.yy",},"order":7,},
     {"id":{"name":"snd_dk_grunt1","path":"sounds/snd_dk_grunt1/snd_dk_grunt1.yy",},"order":8,},
     {"id":{"name":"spr_dk_feet","path":"sprites/spr_dk_feet/spr_dk_feet.yy",},"order":26,},
-    {"id":{"name":"obj_spank_debug","path":"objects/obj_spank_debug/obj_spank_debug.yy",},"order":41,},
+    {"id":{"name":"obj_000_debug","path":"objects/obj_000_debug/obj_000_debug.yy",},"order":41,},
     {"id":{"name":"snd_dk_grunt2","path":"sounds/snd_dk_grunt2/snd_dk_grunt2.yy",},"order":9,},
     {"id":{"name":"snd_dk_grunt3","path":"sounds/snd_dk_grunt3/snd_dk_grunt3.yy",},"order":10,},
     {"id":{"name":"snd_dk_grunt4","path":"sounds/snd_dk_grunt4/snd_dk_grunt4.yy",},"order":11,},

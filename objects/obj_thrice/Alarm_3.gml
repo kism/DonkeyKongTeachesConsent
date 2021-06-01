@@ -1,3 +1,3 @@
-/// @description Thrice timeout
+/// @description Spawn the transition object
 
-hits = 0
+instance_create_layer(self.x, self.y, "Instances", obj_transition)

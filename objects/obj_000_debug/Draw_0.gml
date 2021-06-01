@@ -1,9 +1,27 @@
-/// @description Insert description here
+/// @description Debug Text
+
+// Set this global in the meta object
+if global.debug != true {
+	instance_deactivate_object(self)
+}
+
+text = "- DEBUG -" + "\n"
+
+if instance_exists(obj_meta) {
+	text = text + "Game State: " + global.calibrationstate + "\n"
+}
+
+if instance_exists(obj_dk_main) {
+	text = text + "n delays: " + string(obj_dk_main.delays) + "\n"
+	text = text + "spanks: " + string(obj_dk_main.spanks) + "\n"
+	text = text + "spanks required: " + string(obj_dk_main.spanksrequired) + "\n"
+	text = text + "debounce: " + string(obj_dk_main.debounce) + "\n"
+}
 
 if instance_exists(obj_dk_frenzy) {
 	// Populate
 	draw_set_font(font_UI)
-	text = "frenzy: "
+	text = text + "Frenzy: " 
 
 	// Misc
 	if obj_dk_frenzy.frenzy == true {
@@ -35,6 +53,6 @@ if instance_exists(obj_dk_frenzy) {
 	
 	text = text + "Spankmeter target:    " + string(obj_spankmeter_fg.target) + "\n"
 	text = text + "Spankmeter spankness: " + string(obj_spankmeter_fg.spankness) + "\n"
-	
-	draw_text(self.x, self.y, text)
 }
+
+draw_text(self.x, self.y, text)

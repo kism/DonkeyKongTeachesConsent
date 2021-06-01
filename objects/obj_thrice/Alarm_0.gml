@@ -1,3 +1,3 @@
-/// @description Left Button countdown
+/// @description Fun delay
 
-buttononecountdown = false
+global.calibrationstate = "transition"
