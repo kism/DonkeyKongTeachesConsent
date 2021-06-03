@@ -12,12 +12,11 @@ if global.calibrationstate == "calibrated"{
 if global.calibrationstate == "transition"{
 	if !instance_exists(obj_transition) && transitionstarted = false {
 		transitionstarted = true
-		self.alarm[3] = room_speed * 1.0
-		self.alarm[4] = room_speed * 1.0
+		self.alarm[3] = room_speed * 0.5
+		self.alarm[4] = room_speed * 0.5
 		self.alarm[5] = room_speed * 3.0
 		self.x = 1920
 		self.y = 0
-		
 	}
 }
 

@@ -87,7 +87,6 @@
     {"id":{"name":"obj_spankmeter_bg","path":"objects/obj_spankmeter_bg/obj_spankmeter_bg.yy",},"order":42,},
     {"id":{"name":"obj_calibration","path":"objects/obj_calibration/obj_calibration.yy",},"order":10,},
     {"id":{"name":"obj_titlescreenspawner","path":"objects/obj_titlescreenspawner/obj_titlescreenspawner.yy",},"order":11,},
-    {"id":{"name":"obj_bongos","path":"objects/obj_bongos/obj_bongos.yy",},"order":35,},
     {"id":{"name":"obj_bluebg","path":"objects/obj_bluebg/obj_bluebg.yy",},"order":12,},
     {"id":{"name":"shd_finalseq","path":"shaders/shd_finalseq/shd_finalseq.yy",},"order":0,},
     {"id":{"name":"spr_pre_release","path":"sprites/spr_pre_release/spr_pre_release.yy",},"order":28,},
