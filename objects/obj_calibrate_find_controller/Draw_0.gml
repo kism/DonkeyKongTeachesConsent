@@ -19,4 +19,3 @@ for (i = 0; i < 50; i += 1) {
 }
 
 draw_text(self.x, self.y, text)
-

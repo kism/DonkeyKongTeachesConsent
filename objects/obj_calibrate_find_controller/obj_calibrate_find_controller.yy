@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_calibrate",
+  "name": "obj_calibrate_find_controller",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,10 +1,10 @@
 /// @description Debug Text
 
 // Set this global in the meta object
-if global.debug != true {
+if global.debug == false {
 	instance_deactivate_object(self)
 } else {
-	self.visible = true
+	//self.visible = true
 }
 
 text = "- DEBUG -" + "\n"
