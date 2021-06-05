@@ -1,7 +1,7 @@
 /// @description list controllers
 
-self.x = 20
-self.y = 20
+self.x = room_width * 0.04
+self.y = room_height * 0.04
 
 // Populate
 draw_set_font(font_UI)

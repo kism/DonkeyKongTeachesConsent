@@ -2,8 +2,7 @@
 
 // Set this global in the meta object
 draw_set_font(font_UI)
-draw_set_color(c_red)
-
+//draw_set_color(c_red)
 
 text = "- DEBUG -" + "\n"
 
@@ -34,7 +33,7 @@ if instance_exists(obj_dk_frenzy) {
 	}
 
 	text = text + "spanks: " + string(obj_dk_frenzy.spanks) + "\n" 
-	text = text + "spank_heat: " + string(obj_dk_frenzy.spank_heat) + "\n" 
+	text = text + "spank_heat: " + string(floor(obj_dk_frenzy.spank_heat)) + "/" + string(obj_dk_frenzy.spank_heat_target) + "\n" 
 	text = text + "spank_heat_min: " + string(obj_dk_frenzy.spank_heat_min) + "\n" 
 	text = text + "spank_heat_new: " + string(obj_dk_frenzy.spank_heat_new) + "\n" 
 
@@ -44,8 +43,6 @@ if instance_exists(obj_dk_frenzy) {
 	} else {
 		text = text + "false" + "\n" 
 	}
-
-	text = text + "spank_heat_target: " + string(obj_dk_frenzy.spank_heat_target) + "\n" 
 	
 	text = text + "complete: "
 	if obj_dk_frenzy.complete == true {
@@ -53,9 +50,15 @@ if instance_exists(obj_dk_frenzy) {
 	} else {
 		text = text + "false" + "\n" 
 	}
-	
+}
+
+if instance_exists(obj_spankmeter_bg) {
+	text = text + "Spankmeter visable:    " + string(obj_spankmeter_bg.fadein) + "\n"
+}
+
+if instance_exists(obj_spankmeter_fg) {
 	text = text + "Spankmeter target:    " + string(obj_spankmeter_fg.target) + "\n"
 	text = text + "Spankmeter spankness: " + string(obj_spankmeter_fg.spankness) + "\n"
 }
 
-draw_text(self.x, self.y, text)
+scr_draw_text_outlined(self.x, self.y,c_black,c_white, text)
