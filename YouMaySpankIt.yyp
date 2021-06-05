@@ -1,7 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_banana","path":"sprites/spr_banana/spr_banana.yy",},"order":0,},
-    {"id":{"name":"scr_doOrbit","path":"scripts/scr_doOrbit/scr_doOrbit.yy",},"order":8,},
+    {"id":{"name":"scr_orbit_do","path":"scripts/scr_orbit_do/scr_orbit_do.yy",},"order":8,},
     {"id":{"name":"scr_calibratebananas_spawn","path":"scripts/scr_calibratebananas_spawn/scr_calibratebananas_spawn.yy",},"order":11,},
     {"id":{"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},"order":1,},
     {"id":{"name":"spr_bg_cutout","path":"sprites/spr_bg_cutout/spr_bg_cutout.yy",},"order":27,},
@@ -46,7 +46,7 @@
     {"id":{"name":"snd_dk_grunt2","path":"sounds/snd_dk_grunt2/snd_dk_grunt2.yy",},"order":9,},
     {"id":{"name":"snd_dk_grunt3","path":"sounds/snd_dk_grunt3/snd_dk_grunt3.yy",},"order":10,},
     {"id":{"name":"snd_dk_grunt4","path":"sounds/snd_dk_grunt4/snd_dk_grunt4.yy",},"order":11,},
-    {"id":{"name":"scr_goToOrbit","path":"scripts/scr_goToOrbit/scr_goToOrbit.yy",},"order":9,},
+    {"id":{"name":"scr_orbit_goto","path":"scripts/scr_orbit_goto/scr_orbit_goto.yy",},"order":9,},
     {"id":{"name":"snd_dk_grunt5","path":"sounds/snd_dk_grunt5/snd_dk_grunt5.yy",},"order":12,},
     {"id":{"name":"spr_dk_reaction_big","path":"sprites/spr_dk_reaction_big/spr_dk_reaction_big.yy",},"order":29,},
     {"id":{"name":"snd_dk_grunt6","path":"sounds/snd_dk_grunt6/snd_dk_grunt6.yy",},"order":13,},

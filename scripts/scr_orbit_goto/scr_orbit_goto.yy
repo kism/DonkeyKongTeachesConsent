@@ -6,7 +6,7 @@
     "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "scr_goToOrbit",
+  "name": "scr_orbit_goto",
   "tags": [],
   "resourceType": "GMScript",
 }

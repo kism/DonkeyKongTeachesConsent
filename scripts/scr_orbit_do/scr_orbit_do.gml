@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_doOrbit(inAngle){
+function scr_orbit_do(inAngle){
 	result = []
 	radius = 900
 	
