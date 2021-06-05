@@ -5,7 +5,6 @@ if global.failstate == true {
 	game_end()
 }
 
-
 // TODO, FIX THIS GARBO LMAO
 // Yeah I regret this, I cant move it apparently
 if global.calibrationstate == "controller" {

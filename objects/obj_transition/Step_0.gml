@@ -17,11 +17,11 @@ if x > - 30 && x <= 0 {
 	if !instance_exists(obj_title) {
 		instance_create_depth(room_width * 0.5, room_height * 0.3,2,obj_title)
 	}
-	if !instance_exists(obj_titlescreenspawner) {
-		instance_create_depth(0, 0, 0, obj_titlescreenspawner)
+	if !instance_exists(obj_spawner_titlescreen) {
+		instance_create_depth(0, 0, 0, obj_spawner_titlescreen)
 	}
-	if !instance_exists(obj_bluebg) {
-		instance_create_depth(0, 0, 3, obj_bluebg)
+	if !instance_exists(obj_title_background) {
+		instance_create_depth(0, 0, 3, obj_title_background)
 	}
 	physics_world_gravity(0,0)
 }

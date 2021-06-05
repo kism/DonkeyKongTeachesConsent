@@ -2,7 +2,7 @@
 
 global_scr_inputGet(global.controllerid)
 
-if (global.buttoneraise == true || global.butttworaise == true)  {
+if ((global.buttoneraise == true || global.butttworaise == true)) && incorrectspank = false  {
 	instance_deactivate_object(obj_ymsi)
 	instance_deactivate_object(obj_once)
 	// Spank left cheek	
@@ -19,7 +19,8 @@ if (global.buttoneraise == true || global.butttworaise == true)  {
 	if (debounce == false) {
 		// If DK has been incorrectly spanked, add more context as to why the game is about to exit
 		if self.image_index == 0 {
-		   self.alarm[1] = 0.5 * room_speed
+			incorrectspank = true
+		    self.alarm[1] = 0.5 * room_speed
 		} 
 		if (self.image_index == 1) {
 			// DK has been correctly spanked	

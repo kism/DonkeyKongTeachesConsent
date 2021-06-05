@@ -2,14 +2,17 @@
 
 // Set this global in the meta object
 if global.debug == false {
+	draw_set_color(c_white)
 	instance_deactivate_object(self)
 } else {
-	//self.visible = true
+	self.visible = true
+	draw_set_font(font_UI)
+	draw_set_color(c_red)
 }
 
 text = "- DEBUG -" + "\n"
 
-if instance_exists(obj_meta) {
+if instance_exists(obj_000_meta) {
 	text = text + "Game State: " + global.calibrationstate + "\n"
 }
 
@@ -21,8 +24,6 @@ if instance_exists(obj_dk_main) {
 }
 
 if instance_exists(obj_dk_frenzy) {
-	// Populate
-	draw_set_font(font_UI)
 	text = text + "Frenzy: " 
 
 	// Misc

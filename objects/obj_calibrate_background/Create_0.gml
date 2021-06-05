@@ -1,5 +1,6 @@
 /// @description set transparency
 
-depth = 99
-
+self.depth = 99
+self.x = 0
+self.y = 0
 fadeout = false

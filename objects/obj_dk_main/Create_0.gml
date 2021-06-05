@@ -6,6 +6,7 @@ self.x = room_width * 0.37
 self.y = room_height * 0.385
 self.depth = 20
 spanks = 0
+incorrectspank = false
 
 //Spanks required to get to the next phase	
 if (global.debug == true) {

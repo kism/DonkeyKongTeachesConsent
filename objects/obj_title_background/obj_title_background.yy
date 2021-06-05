@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_pre_release",
-    "path": "sprites/spr_pre_release/spr_pre_release.yy",
+    "name": "spr_title_background",
+    "path": "sprites/spr_title_background/spr_title_background.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,7 +21,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":27,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
@@ -32,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_meta",
+  "name": "obj_title_background",
   "tags": [],
   "resourceType": "GMObject",
 }

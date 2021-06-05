@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bluebg",
-    "path": "sprites/spr_bluebg/spr_bluebg.yy",
+    "name": "spr_title_background",
+    "path": "sprites/spr_title_background/spr_title_background.yy",
   },
   "solid": false,
   "visible": true,
@@ -31,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_bluebg",
+  "name": "obj_calibrate_background",
   "tags": [],
   "resourceType": "GMObject",
 }

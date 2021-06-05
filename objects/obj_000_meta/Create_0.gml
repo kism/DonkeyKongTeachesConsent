@@ -1,5 +1,22 @@
 /// @description G L O B A L S
 
+// PRERELEASE: Sets the prerelease watermark
+// DEBUG: Parameter will shown the debug hud during the frenzy
+// plus make the main phase only require one spank
+global.prerelease = true
+global.debug = true
+
+if global.prerelease == false {
+	self.visible = false	
+} else {
+	self.visible = true
+	self.x = room_width * 0.01
+	self.y = room_height * 0.95
+	self.depth = -6969
+}
+
+// - - - - - - - - - - - - - - - - - - - - 
+
 // Controllers
 global.controllerid = 0
 
@@ -21,19 +38,3 @@ global.failstate = false
 global.calibrationstate = "initial"
 global.fadetogame = "false"
 
-// - - - - - - - - - - - - - - - - - - - - 
-
-// Prerelease, sets the prerelease watermark
-global.prerelease = true
-// The debug parameter will shown the debug hud during the frenzy
-// plus make the main phase only require one spank
-global.debug = true
-
-if global.prerelease == false {
-	self.visible = false	
-} else {
-	self.visible = true
-	self.x = room_width * 0.01
-	self.y = room_height * 0.95
-	self.depth = -6969
-}
