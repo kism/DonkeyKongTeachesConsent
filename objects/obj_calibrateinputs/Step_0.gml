@@ -11,6 +11,7 @@ if global.calibrationstate == "controller" || global.calibrationstate == "calibr
 	} else if global.buttononealtmap == "-1" {
 		self.image_index = 1
 		if audioplayed[0] == false {
+			scr_calibratebananas_spawn("left")
 			audio_play_sound(snd_calhit1,1,0)
 			audioplayed[0] = true
 		}
@@ -18,6 +19,7 @@ if global.calibrationstate == "controller" || global.calibrationstate == "calibr
 	} else if global.buttontwomap == "-1" {
 		self.image_index = 2
 		if audioplayed[1] == false {
+			scr_calibratebananas_spawn("left")
 			audio_play_sound(snd_calhit2,2,0)
 			audioplayed[1] = true
 		}
@@ -25,6 +27,7 @@ if global.calibrationstate == "controller" || global.calibrationstate == "calibr
 	} else if global.buttontwoaltmap == "-1" {
 		self.image_index = 3
 		if audioplayed[2] == false {
+			scr_calibratebananas_spawn("right")
 			audio_play_sound(snd_calhit3,3,0)
 			audioplayed[2] = true
 		}
@@ -32,6 +35,7 @@ if global.calibrationstate == "controller" || global.calibrationstate == "calibr
 	} else if global.buttontwoaltmap != "-1" {
 		self.image_alpha = 0
 		if audioplayed[3] == false {
+			scr_calibratebananas_spawn("right")
 			audio_play_sound(snd_calhit4,4,0)
 			audioplayed[3] = true
 		}

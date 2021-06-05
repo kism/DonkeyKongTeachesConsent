@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"spr_banana","path":"sprites/spr_banana/spr_banana.yy",},"order":0,},
     {"id":{"name":"scr_doOrbit","path":"scripts/scr_doOrbit/scr_doOrbit.yy",},"order":8,},
+    {"id":{"name":"scr_calibratebananas_spawn","path":"scripts/scr_calibratebananas_spawn/scr_calibratebananas_spawn.yy",},"order":11,},
     {"id":{"name":"spr_transition","path":"sprites/spr_transition/spr_transition.yy",},"order":1,},
     {"id":{"name":"spr_bg_cutout","path":"sprites/spr_bg_cutout/spr_bg_cutout.yy",},"order":27,},
     {"id":{"name":"obj_dk_frenzy","path":"objects/obj_dk_frenzy/obj_dk_frenzy.yy",},"order":36,},
@@ -108,6 +109,7 @@
     {"id":{"name":"obj_abs_ym","path":"objects/obj_abs_ym/obj_abs_ym.yy",},"order":26,},
     {"id":{"name":"obj_abs_si","path":"objects/obj_abs_si/obj_abs_si.yy",},"order":27,},
     {"id":{"name":"obj_abs_abs","path":"objects/obj_abs_abs/obj_abs_abs.yy",},"order":28,},
+    {"id":{"name":"obj_banana_nophysics","path":"objects/obj_banana_nophysics/obj_banana_nophysics.yy",},"order":44,},
     {"id":{"name":"rm_Calibrate","path":"rooms/rm_Calibrate/rm_Calibrate.yy",},"order":0,},
     {"id":{"name":"rm_Chapter1","path":"rooms/rm_Chapter1/rm_Chapter1.yy",},"order":1,},
     {"id":{"name":"rm_Credits","path":"rooms/rm_Credits/rm_Credits.yy",},"order":2,},
