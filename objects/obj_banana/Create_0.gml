@@ -13,8 +13,6 @@ if global.calibrationstate == "transition_end" {
 	self.phy_rotation = random_range(-179,179)
 	self.depth = 100
 	if global.calibrationstate == "credits" {
-		if !audio_is_playing(snd_calhit1) && !audio_is_playing(snd_calhit2) && !audio_is_playing(snd_calhit3) && !audio_is_playing(snd_calhit4) {
-			audio_play_sound(snd_banana,0,0)
-		}
+		audio_play_sound(snd_banana,0,0)
 	}
 } 
