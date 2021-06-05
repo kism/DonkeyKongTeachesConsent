@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description keep banana spinning in transition_end phase
 
 if (self.phy_angular_velocity < 10 && 
 	self.phy_angular_velocity > -10 && 
