@@ -33,7 +33,7 @@ if global.calibrationstate == "controller" || global.calibrationstate == "calibr
 		}
 		global_scr_inputButtonDetect(global.controllerid,4)
 	} else if global.buttontwoaltmap != "-1" {
-		self.image_alpha = 0
+		self.image_index = 4
 		if audioplayed[3] == false {
 			scr_calibratebananas_spawn("right")
 			audio_play_sound(snd_calhit4,4,0)
