@@ -11,21 +11,38 @@ if instance_exists(obj_000_meta) {
 }
 
 if instance_exists(obj_startgame) {
-	text = text + "ready: " + string(obj_startgame.ready) + "\n"
-	text = text + "start game : " + string(obj_startgame.startgame) + "\n"
+	text = text + "ready: "
+	if obj_startgame.ready {
+		text = text + "true" + "\n" 
+	} else {
+		text = text + "false" + "\n" 
+	}
+	
+	text = text + "start game : " 
+	if obj_startgame.startgame {
+		text = text + "true" + "\n" 
+	} else {
+		text = text + "false" + "\n" 
+	}
+	
+	
 }
 
 if instance_exists(obj_dk_main) {
 	text = text + "n delays: " + string(obj_dk_main.delays) + "\n"
 	text = text + "spanks: " + string(obj_dk_main.spanks) + "\n"
 	text = text + "spanks required: " + string(obj_dk_main.spanksrequired) + "\n"
-	text = text + "debounce: " + string(obj_dk_main.debounce) + "\n"
+	
+	text = text + "debounce: "
+	if obj_dk_main.debounce {
+		text = text + "true" + "\n" 
+	} else {
+		text = text + "false" + "\n" 
+	}
 }
 
 if instance_exists(obj_dk_frenzy) {
 	text = text + "Frenzy: " 
-
-	// Misc
 	if obj_dk_frenzy.frenzy == true {
 		text = text + "true" + "\n" 
 	} else {
@@ -44,6 +61,8 @@ if instance_exists(obj_dk_frenzy) {
 		text = text + "false" + "\n" 
 	}
 	
+	text = text + "cycles_without_spanks: " + string(obj_dk_frenzy.cycles_without_spanks) + "\n"
+	
 	text = text + "complete: "
 	if obj_dk_frenzy.complete == true {
 		text = text + "true" + "\n" 
@@ -53,7 +72,12 @@ if instance_exists(obj_dk_frenzy) {
 }
 
 if instance_exists(obj_spankmeter_bg) {
-	text = text + "Spankmeter visable:    " + string(obj_spankmeter_bg.fadein) + "\n"
+	text = text + "Spankmeter visable:   "
+	if obj_spankmeter_bg.fadein {
+		text = text + "true" + "\n" 
+	} else {
+		text = text + "false" + "\n" 
+	}
 }
 
 if instance_exists(obj_spankmeter_fg) {
