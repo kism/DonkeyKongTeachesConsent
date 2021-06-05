@@ -3,8 +3,6 @@
 if ready == true {
 	global_scr_inputGet(global.controllerid)
 
-	// instance_create_depth(0,0,1,obj_dk_inactive)
-
 	if global.buttoneraise == true || global.butttworaise == true {
 		physics_world_gravity(0, 60)
 		startgame = true

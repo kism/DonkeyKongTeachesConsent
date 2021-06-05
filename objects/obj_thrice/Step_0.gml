@@ -6,7 +6,7 @@
 
 if global.calibrationstate == "calibrated"{
 	self.alarm[0] = room_speed * 0.6
-	global.calibrationstate = "pepsi"
+	global.calibrationstate = "wait_for_transition"
 }
 
 if global.calibrationstate == "transition"{

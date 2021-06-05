@@ -1,5 +1,6 @@
 /// @description Init
 
+global.calibrationstate = "game"
 self.image_alpha = 1
 self.image_index = 0
 self.x = room_width * 0.37

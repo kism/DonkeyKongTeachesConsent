@@ -1,19 +1,19 @@
 /// @description Debug Text
 
 // Set this global in the meta object
-if global.debug == false {
-	draw_set_color(c_white)
-	instance_deactivate_object(self)
-} else {
-	self.visible = true
-	draw_set_font(font_UI)
-	draw_set_color(c_red)
-}
+draw_set_font(font_UI)
+draw_set_color(c_red)
+
 
 text = "- DEBUG -" + "\n"
 
 if instance_exists(obj_000_meta) {
 	text = text + "Game State: " + global.calibrationstate + "\n"
+}
+
+if instance_exists(obj_startgame) {
+	text = text + "ready: " + string(obj_startgame.ready) + "\n"
+	text = text + "start game : " + string(obj_startgame.startgame) + "\n"
 }
 
 if instance_exists(obj_dk_main) {

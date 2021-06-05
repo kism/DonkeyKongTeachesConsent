@@ -10,7 +10,7 @@ if x > - 2000 {
 }
 
 if x > - 30 && x <= 0 {
-	global.calibrationstate = "transitionend"
+	global.calibrationstate = "transition_end"
 	if !instance_exists(obj_desk) {
 		instance_create_depth(room_width * 0.5, room_height * 0.7,2,obj_desk)
 	}

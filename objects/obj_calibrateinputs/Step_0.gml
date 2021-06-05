@@ -43,3 +43,7 @@ if global.calibrationstate == "controller" || global.calibrationstate == "calibr
 	}
 }
 
+if global.calibrationstate == "transition_end" {
+	instance_deactivate_object(self)	
+}
+

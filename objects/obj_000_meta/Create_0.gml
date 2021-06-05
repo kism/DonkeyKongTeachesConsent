@@ -6,6 +6,10 @@
 global.prerelease = true
 global.debug = true
 
+if !instance_exists(obj_000_debug) && global.debug == true {
+	instance_create_layer(0, 0, "Instances", obj_000_debug)
+}
+
 if global.prerelease == false {
 	self.visible = false	
 } else {

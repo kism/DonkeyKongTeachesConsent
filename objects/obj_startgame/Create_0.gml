@@ -1,4 +1,4 @@
-/// @description init
+/// @description init, heck this is a bit... heck
 
 ready = false
 startgame = false

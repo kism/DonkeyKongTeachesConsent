@@ -6,7 +6,7 @@ function global_scr_inputDetect(argument0) {
 		if gamepad_button_check(dvc, j) {
 			global.controllerid = dvc
 			obj_calibrateinputs.alarm[0] = room_speed * 0.5
-			global.calibrationstate = "pausebeforecontroller"
+			global.calibrationstate = "pause_before_controller"
 		}
 	}
 }
