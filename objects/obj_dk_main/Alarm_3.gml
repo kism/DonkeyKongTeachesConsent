@@ -3,7 +3,7 @@
 obj_dk_reaction.image_index = 0
 
 // Check the spanks required to continue to the next phase
-if spanks > spanksrequired {
+if spanks >= spanksrequired {
 	instance_create_layer(room_width * 0.37, room_height/1.6, "Instances", obj_dk_frenzy)
 	instance_deactivate_object(self)
 }

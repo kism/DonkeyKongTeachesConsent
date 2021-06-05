@@ -24,11 +24,11 @@ if ((global.buttoneraise == true || global.butttworaise == true)) && incorrectsp
 		} 
 		if (self.image_index == 1) {
 			// DK has been correctly spanked	
-			spanks += 1					// Increment spanks
+			spanks += 1					    // Increment spanks
 			self.image_index = 0			// DK no longer needs to indicate that he want's to be spanked
 			obj_dk_reaction.image_index = 1
 			scr_dk_playGrunt()
-			self.alarm[3] = room_speed * 1
+			self.alarm[3] = room_speed * 1	   // Revert reaction after alarm	
 			self.alarm[0] = room_speed * 3     // Wait 3 seconds + whatever random chance
 			// Spank cooldown
 			debounce = true

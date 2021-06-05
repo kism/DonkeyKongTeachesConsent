@@ -11,7 +11,7 @@ incorrectspank = false
 
 //Spanks required to get to the next phase	
 if (global.debug == true) {
-	spanksrequired = 0 // Debug
+	spanksrequired = 1 // Debug
 } else {
 	spanksrequired = 5 // Prod
 }
