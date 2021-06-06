@@ -37,9 +37,9 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 		
 		// Little extra for spank heat
 		if spank_heat_min < (spank_heat_target * 0.40) {
-			spank_heat_min += 0.25
+			spank_heat_min += 0.30
 		} else {
-			spank_heat_min += 1.39
+			spank_heat_min += 1.50
 		}
 	}
 }
