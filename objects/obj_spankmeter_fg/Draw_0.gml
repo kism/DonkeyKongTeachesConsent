@@ -23,4 +23,11 @@ if instance_exists(obj_dk_frenzy) {
 	}
 
 	draw_sprite_part_ext(spr_spankmeter_fg, 0, 0, 0, spankness, obj_spankmeter_bg.sprite_height, (obj_spankmeter_bg.x - obj_spankmeter_bg.sprite_width / 2), (obj_spankmeter_bg.y - obj_spankmeter_bg.sprite_height / 2), 1, 1, c_white, obj_spankmeter_bg.image_alpha)
+	
+	if instance_exists(obj_000_debug) {
+		draw_set_font(font_UI)
+		draw_set_color(c_black)
+		spank_heat_min_target = ((obj_dk_frenzy.spank_heat_min / obj_dk_frenzy.spank_heat_target) * obj_spankmeter_bg.sprite_width) + room_width * 0.281 //This is a bit wild, since the sprite that this is following is centered the constant used is a bit wild
+		draw_text(spank_heat_min_target,(obj_spankmeter_bg.y - obj_spankmeter_bg.sprite_height * 0.25),"|")
+	}
 }

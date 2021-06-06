@@ -1,7 +1,8 @@
 /// @description Global states
 
 if global.failstate == true {
-	url_open("https://www.fpnsw.org.au/health-information/consent-and-sex/consent-and-sex")
+	//url_open("https://www.fpnsw.org.au/health-information/consent-and-sex/consent-and-sex")
+	url_open("https://www.police.govt.nz/advice-services/sexual-assault-and-consent")
 	game_end()
 }
 
