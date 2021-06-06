@@ -21,9 +21,8 @@ spanks_last_cycle = 0
 // var to count spank acceleration cycles the player hasnt spanked
 cycles_without_spanks = 0
 
-
 // Ending condition
-spank_heat_target = 300
+spank_heat_target = 420
 complete = false
 
 // Create Spankmeter layer
