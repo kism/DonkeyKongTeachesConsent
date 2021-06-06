@@ -10,12 +10,12 @@ frenzy = false
 vol = 1
 
 // Spank Vars, avoid div by zero
-spanks = 1
-spank_heat = 1
-spank_heat_min = 1
-spank_heat_new = 1
+spanks = 0
+spank_heat = 0
+spank_heat_min = 0
+spank_heat_new = 0
 spanks_now_declining = false
-spanks_max_per_cycle = 3
+spanks_max_per_cycle = 3 //Maximum before they start getting nerfed 1/n spanks
 spanks_last_cycle = 0
 
 // var to count spank acceleration cycles the player hasnt spanked
