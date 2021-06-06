@@ -26,16 +26,18 @@ global.controllerid = 0
 
 // Buttons
 global.buttoneraise     = false
-global.buttoneprevstate = false
+global.buttoneprevstate_primary   = false
+global.buttoneprevstate_alternate = false
 global.buttononemap     = -1
 global.buttononealtmap  = -1
 global.butttworaise     = false
-global.butttwoprevstate = false
+global.butttwoprevstate_primary   = false
+global.butttwoprevstate_alternate = false
 global.buttontwomap     = -1
 global.buttontwoaltmap  = -1
 // Hack in multipress
-global.buttonemulti = false
-global.butttwomulti = false
+global.buttonemulti = 0
+global.butttwomulti = 0
 
 // States
 global.failstate = false

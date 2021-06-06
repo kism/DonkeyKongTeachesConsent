@@ -1,42 +1,49 @@
 function global_scr_inputGet(argument0) {
 	dvc = argument0
 
-	buttononestate = gamepad_button_check(dvc,global.buttononemap) || gamepad_button_check(dvc,global.buttononealtmap)
-	buttontwostate = gamepad_button_check(dvc,global.buttontwomap) || gamepad_button_check(dvc,global.buttontwoaltmap)
+	buttononestate_primary   = gamepad_button_check(dvc,global.buttononemap)
+	buttononestate_alternate = gamepad_button_check(dvc,global.buttononealtmap)
+	
+	buttontwostate_primary   = gamepad_button_check(dvc,global.buttontwomap)
+	buttontwostate_alternate = gamepad_button_check(dvc,global.buttontwoaltmap)
 
-	if global.buttoneprevstate == false && buttononestate == true {
-		global.buttoneraise = true
-	} else {
-		global.buttoneraise = false
-	}
+	if global.buttoneprevstate_primary == false && buttononestate_primary == true {
+		global.buttonemulti += 1
+	} 
+	if global.buttoneprevstate_alternate == false && buttononestate_alternate == true {
+		global.buttonemulti += 1
+	} 
 
-	if global.butttwoprevstate == false && buttontwostate == true {
-		global.butttworaise = true
-	} else {
-		global.butttworaise = false
-	}
+	if global.butttwoprevstate_primary == false && buttontwostate_primary == true {
+		global.butttwomulti += 1
+	} 
+	if global.butttwoprevstate_alternate == false && buttontwostate_alternate == true {
+		global.butttwomulti += 1
+	} 
+	
+	
 	
 	// Hack in multipress
-	if instance_exists(obj_dk_frenzy) {
-		if gamepad_button_check(dvc,global.buttononemap) && gamepad_button_check(dvc,global.buttononealtmap) {
-			if global.buttonemulti == false {
-				global.buttoneraise = true
-			}
-			global.buttonemulti = true
+	if global.buttonemulti >= 1 {
+		global.buttoneraise = true
+		if instance_exists(obj_dk_frenzy) || global.calibrationstate == "credits" {
+			global.buttonemulti -= 1
 		} else {
-			global.buttonemulti = false
+			global.buttonemulti = 0
 		}
-		if gamepad_button_check(dvc,global.buttontwomap) && gamepad_button_check(dvc,global.buttontwoaltmap) {
-			if global.butttwomulti == false {
-				global.butttworaise = true
-			}
-			global.butttwomulti = true
+	}
+	if global.butttwomulti >= 1 {
+		global.butttworaise = true
+		if instance_exists(obj_dk_frenzy) || global.calibrationstate == "credits" {
+			global.butttwomulti -= 1
 		} else {
-			global.butttwomulti = false
+			global.butttwomulti = 0
 		}
 	}
 
-	global.buttoneprevstate = buttononestate
-	global.butttwoprevstate = buttontwostate
-
+	// Set future previous presses
+	global.buttoneprevstate_primary   = buttononestate_primary
+	global.buttoneprevstate_alternate = buttononestate_alternate
+	global.butttwoprevstate_primary   = buttontwostate_primary
+	global.butttwoprevstate_alternate = buttontwostate_alternate
 }
