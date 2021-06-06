@@ -32,6 +32,7 @@ function global_scr_inputGet(argument0) {
 			global.buttonemulti = 0
 		}
 	}
+	
 	if global.butttwomulti >= 1 {
 		global.butttworaise = true
 		if instance_exists(obj_dk_frenzy) || global.calibrationstate == "credits" {
@@ -44,6 +45,7 @@ function global_scr_inputGet(argument0) {
 	// Set future previous presses
 	global.buttoneprevstate_primary   = buttononestate_primary
 	global.buttoneprevstate_alternate = buttononestate_alternate
+	
 	global.butttwoprevstate_primary   = buttontwostate_primary
 	global.butttwoprevstate_alternate = buttontwostate_alternate
 }
