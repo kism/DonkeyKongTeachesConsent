@@ -3,7 +3,7 @@
 // This isnt future proof lol Kieran
 if vol >= 0 {
 	vol -= 0.005
-    audio_sound_gain(msc_aquatic, vol,0)
+    audio_sound_gain(msc_aquatic, vol, 0)
 } else {
 	vol = 0
 }

@@ -6,13 +6,13 @@ if ((global.buttoneraise == true || global.butttworaise == true)) && incorrectsp
 	instance_deactivate_object(obj_ymsi)
 	instance_deactivate_object(obj_once)
 	// Spank left cheek	
-	if global.buttoneraise == true {
-		// instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left)
+	if global.buttoneraise == true && spanked_left == false {
+			spanked_left = true
 			scr_dk_doSpank(self.x, self.y, "left")
 	}
 	// Spank right cheek
-	if global.butttworaise == true {
-		// instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right)
+	if global.butttworaise == true && spanked_right == false {
+			spanked_right = true
 			scr_dk_doSpank(self.x ,self.y, "right")
 	}
 	// debounce check to allow a double spank

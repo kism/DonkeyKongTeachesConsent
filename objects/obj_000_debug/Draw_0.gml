@@ -3,7 +3,7 @@
 text = "- DEBUG -" + "\n"
 
 if instance_exists(obj_000_meta) {
-	text = text + "Game State: " + global.calibrationstate + "\n"
+	text = text + "game state: " + global.calibrationstate + "\n"
 }
 
 if instance_exists(obj_startgame) {
@@ -23,8 +23,20 @@ if instance_exists(obj_startgame) {
 }
 
 if global.calibrationstate == "game" || global.calibrationstate == "credits" || (instance_exists(obj_startgame) && global.calibrationstate == "transition_end" && obj_startgame.ready) {
-	text = text + "Input: " + string(global.buttoneprevstate_primary) + "," + string(global.buttoneprevstate_alternate) + "," + string(global.butttwoprevstate_primary) + "," + string(global.butttwoprevstate_alternate) + "\n"
-	text = text + "Queue: " + string(global.buttonemulti) + "," + string(global.butttwomulti) + "\n"
+	text = text + "input: " + string(global.buttoneprevstate_primary) + "," + string(global.buttoneprevstate_alternate) + "," + string(global.butttwoprevstate_primary) + "," + string(global.butttwoprevstate_alternate) + "\n"
+	
+	text = text + "queue: "
+	if global.buttonemulti >= 1 {
+		text = text + "L"
+	} else {
+		text = text + " "
+	}
+	if global.butttwomulti >= 1 {
+		text = text + "R"
+	} else {
+		text = text + " "
+	}		 
+	text = text + "\n"
 }
 
 if instance_exists(obj_dk_main) {
@@ -54,7 +66,7 @@ if instance_exists(obj_dk_main) {
 }
 
 if instance_exists(obj_dk_frenzy) {
-	text = text + "Frenzy: " 
+	text = text + "frenzy: " 
 	if obj_dk_frenzy.frenzy == true {
 		text = text + "true" + "\n" 
 	} else {
@@ -72,6 +84,7 @@ if instance_exists(obj_dk_frenzy) {
 	text = text + "spank_heat: " + string(floor(obj_dk_frenzy.spank_heat)) + "/" + string(obj_dk_frenzy.spank_heat_target) + "\n" 
 	text = text + "spank_heat_min: " + string(obj_dk_frenzy.spank_heat_min) + "\n" 
 	text = text + "spank_heat_new: " + string(obj_dk_frenzy.spank_heat_new) + "\n" 
+	text = text + "spanks_last_cycle: " + string(obj_dk_frenzy.spanks_last_cycle) + "\n"
 
 	text = text + "spanks_now_declining: "
 	if obj_dk_frenzy.spanks_now_declining == true {
@@ -84,7 +97,7 @@ if instance_exists(obj_dk_frenzy) {
 }
 
 if instance_exists(obj_spankmeter_bg) {
-	text = text + "Spankmeter visable:   "
+	text = text + "spankmeter visable:   "
 	if obj_spankmeter_bg.fadein {
 		text = text + "true" + "\n" 
 	} else {
@@ -93,8 +106,8 @@ if instance_exists(obj_spankmeter_bg) {
 }
 
 if instance_exists(obj_spankmeter_fg) {
-	text = text + "Spankmeter target:    " + string(obj_spankmeter_fg.target) + "\n"
-	text = text + "Spankmeter spankness: " + string(obj_spankmeter_fg.spankness) + "\n"
+	text = text + "spankmeter target:    " + string(obj_spankmeter_fg.target) + "\n"
+	text = text + "spankmeter spankness: " + string(obj_spankmeter_fg.spankness) + "\n"
 }
 
 // Actually draw

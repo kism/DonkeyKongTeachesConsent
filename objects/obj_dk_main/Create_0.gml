@@ -6,8 +6,11 @@ self.image_index = 0
 self.x = room_width * 0.37
 self.y = room_height * 0.385
 self.depth = 20
+
 spanks = 0
 incorrectspank = false
+spanked_left = false
+spanked_right = false
 
 //Spanks required to get to the next phase	
 if (global.debug == true) {
@@ -20,7 +23,11 @@ if (global.debug == true) {
 delays = 0
 
 // Initial wait until spank
-self.alarm[0] = 6.5 * room_speed
+if global.debug == true {
+	self.alarm[0] = 0.5 * room_speed
+} else {
+	self.alarm[0] = 6.5 * room_speed
+}
 
 // Setup debounce
 debounce = false
