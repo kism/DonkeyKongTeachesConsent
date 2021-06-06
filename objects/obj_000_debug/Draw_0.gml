@@ -22,6 +22,10 @@ if instance_exists(obj_startgame) {
 	}
 }
 
+if global.calibrationstate == "game" || global.calibrationstate == "credits" || (instance_exists(obj_startgame) && global.calibrationstate == "transition_end" && obj_startgame.ready) {
+	text = text + "Input: " + string(global.buttoneprevstate_primary) + "," + string(global.buttoneprevstate_alternate) + "," + string(global.butttwoprevstate_primary) + "," + string(global.butttwoprevstate_alternate) + "\n"
+}
+
 if instance_exists(obj_dk_main) {
 	text = text + "n delays: " + string(obj_dk_main.delays) + "\n"
 	text = text + "spanks: " + string(obj_dk_main.spanks) + "/" + string(obj_dk_main.spanksrequired) + "\n"
