@@ -16,13 +16,11 @@ if ((global.buttoneraise == true || global.butttworaise == true) && complete == 
 	} else { 
 		// Spank left cheek	
 		if global.buttoneraise == true {
-			// instance_create_layer(x + room_width*0.05,x - room_width*0.05,"Instances",obj_spank_left)
 			scr_dk_doSpank(self.x, self.y, "left")
 			spanks += 1
 		}
 		// Spank right cheek
 		if global.butttworaise == true {
-			// instance_create_layer(x - room_width*0.05,x - room_width*0.05,"Instances",obj_spank_right)
 			scr_dk_doSpank(self.x, self.y, "right")
 			spanks += 1
 		}

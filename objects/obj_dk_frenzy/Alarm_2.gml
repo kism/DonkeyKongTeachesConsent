@@ -14,7 +14,7 @@ if spank_heat_new > spank_heat_min {
 }
 
 // Update Heat
-spank_heat += (spanks - 1)
+spank_heat += spanks
 
 //If there were no spanks in the last cycle, start declining
 if spanks == 0 {
@@ -25,13 +25,12 @@ if spanks == 0 {
 		// Prevent an integer overflow kappa
 		if cycles_without_spanks < 100 { 
 			cycles_without_spanks += 1
-	   }
+		}
    }
 } else {
 	// Spanks have started again
-	cycles_without_spanks  = 0
-	spanks_now_declining   = false
-	
+	cycles_without_spanks = 0
+	spanks_now_declining  = false
 }
 
 // Don't hit zero
