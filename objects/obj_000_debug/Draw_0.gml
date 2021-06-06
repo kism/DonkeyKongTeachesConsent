@@ -24,7 +24,7 @@ if instance_exists(obj_startgame) {
 
 if global.calibrationstate == "game" || global.calibrationstate == "credits" || (instance_exists(obj_startgame) && global.calibrationstate == "transition_end" && obj_startgame.ready) {
 	text = text + "Input: " + string(global.buttoneprevstate_primary) + "," + string(global.buttoneprevstate_alternate) + "," + string(global.butttwoprevstate_primary) + "," + string(global.butttwoprevstate_alternate) + "\n"
-	text = text + "Queue: " + string(global.buttonemulti) + "," + string(global.butttwomulti)
+	text = text + "Queue: " + string(global.buttonemulti) + "," + string(global.butttwomulti) + "\n"
 }
 
 if instance_exists(obj_dk_main) {

@@ -31,6 +31,8 @@ function global_scr_inputGet(argument0) {
 		} else {
 			global.buttonemulti = 0
 		}
+	} else {
+		global.buttoneraise = false
 	}
 	
 	if global.butttwomulti >= 1 {
@@ -40,6 +42,8 @@ function global_scr_inputGet(argument0) {
 		} else {
 			global.butttwomulti = 0
 		}
+	} else {
+		global.butttworaise = false
 	}
 
 	// Set future previous presses
