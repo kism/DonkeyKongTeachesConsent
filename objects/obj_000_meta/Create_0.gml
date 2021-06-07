@@ -3,7 +3,7 @@
 // PRERELEASE: Sets the prerelease watermark
 // DEBUG: Parameter will shown the debug hud during the frenzy
 // plus make the main phase only require one spank
-global.prerelease = false
+global.prerelease = true
 global.debug = true
 
 if !instance_exists(obj_000_debug) && global.debug == true {
@@ -43,4 +43,3 @@ global.butttwomulti = 0
 global.failstate = false
 global.calibrationstate = "initial"
 global.fadetogame = "false"
-
