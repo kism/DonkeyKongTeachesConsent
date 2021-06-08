@@ -81,13 +81,14 @@ if ((spank_heat > 1) && (!(audio_is_playing(msc_rambi)))) {
 	audio_play_sound(msc_rambi, 1, 0)
 }
 
-if (!(instance_exists(obj_shadercontrol))) && (spank_heat > (spank_heat_target * 0.45)) {
+//FinalSequenceThreshold
+if (!(instance_exists(obj_shadercontrol))) && (spank_heat > (spank_heat_target * 0.65)) {
 	instance_create_layer(0, 0, "Instances", obj_shadercontrol)
 }
 
 // Spawn meta fruit
 if (complete == false && frenzy == true) {
-	if (random_range(25, 250) < spank_heat) {
+	if (random_range(spank_heat_target * 0.05, spank_heat_target * 0.65) < spank_heat) {
 		if irandom(1) == 0 {
 			instance_create_layer(0 - room_width / 10, random_range(0,room_height / 2),"Instances",obj_final_fruit)
 		} else {

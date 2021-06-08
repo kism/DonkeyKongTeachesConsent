@@ -1,6 +1,11 @@
 /// @description Fade in depending on heat
 
-threshhold = 75
+//FinalSequenceThreshold
+if instance_exists(obj_dk_frenzy) {
+	threshhold = obj_dk_frenzy.spank_heat_target * 0.65
+} else {
+	threshhold = 0	
+}
 divisor = 60
 maxalpha = 0.66
 

@@ -7,6 +7,7 @@ if fadeout == true {
 	}
 } else {
 	if !(instance_exists(obj_dk_frenzy)) {
+		// Fade back in if the spank heat drops
 		if self.image_alpha < 1 {
 			self.image_alpha += 0.015
 		}
