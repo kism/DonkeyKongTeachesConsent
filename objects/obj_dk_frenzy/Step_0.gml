@@ -88,7 +88,8 @@ if (!(instance_exists(obj_shadercontrol))) && (spank_heat > (spank_heat_target *
 
 // Spawn meta fruit
 if (complete == false && frenzy == true) {
-	if (random_range(spank_heat_target * 0.05, spank_heat_target * 0.65) < spank_heat) {
+	//FinalSequenceThreshold
+	if (random_range(spank_heat_target * 0.03, spank_heat_target * 1.75) < spank_heat) {
 		if irandom(1) == 0 {
 			instance_create_layer(0 - room_width / 10, random_range(0,room_height / 2),"Instances",obj_final_fruit)
 		} else {

@@ -1,7 +1,7 @@
 /// @description Move to orbital point
 
 //FinalSequenceThreshold
-if (obj_dk_frenzy.spank_heat > (obj_dk_frenzy.spank_heat_target * 0.65) || orbit == true) {
+if (obj_dk_frenzy.spank_heat > (obj_dk_frenzy.spank_heat_target * 0.60) || orbit == true) {
 	orbit = true
 
 	// Orbit
