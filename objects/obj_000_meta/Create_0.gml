@@ -43,3 +43,6 @@ global.butttwomulti = 0
 global.failstate = false
 global.calibrationstate = "initial"
 global.fadetogame = "false"
+
+// Misc Global Constants
+global.randomangleoffset = random_range(0,259)

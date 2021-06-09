@@ -82,7 +82,7 @@ if ((spank_heat > 1) && (!(audio_is_playing(msc_rambi)))) {
 }
 
 //FinalSequenceThreshold
-if (!(instance_exists(obj_shadercontrol))) && (spank_heat > (spank_heat_target * 0.65)) {
+if (!(instance_exists(obj_shadercontrol))) && (spank_heat > (spank_heat_target * 0.80)) {
 	instance_create_layer(0, 0, "Instances", obj_shadercontrol)
 }
 

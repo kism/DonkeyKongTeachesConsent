@@ -25,7 +25,7 @@ spank_heat += spanks
 
 //If there were no spanks in the last cycle, start declining
 if spanks == 0 {
-	spank_heat -= 10
+	spank_heat -= (10 + (cycles_without_spanks * 5))
 	if spanks_now_declining == false {
 		spanks_now_declining = true
    } else {

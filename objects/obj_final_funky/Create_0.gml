@@ -14,4 +14,4 @@ maxalpha = 0.75
 
 // Orbit
 orbit = false
-angle = 120
+angle = global.randomangleoffset + 120

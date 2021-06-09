@@ -1,7 +1,7 @@
 /// @description steppy
 
 if instance_exists(obj_dk_frenzy) {
-	if obj_dk_frenzy.cycles_without_spanks > 3 && obj_dk_frenzy.spank_heat > 10 {
+	if obj_dk_frenzy.cycles_without_spanks >= 3 && obj_dk_frenzy.spank_heat >= 10 {
 		fadein = true
 	}
 
