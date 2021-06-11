@@ -1,5 +1,7 @@
 ## Donkey Kong Teaches Consent
 
+Made with Game Maker v2.3.2.560
+
 Once this game is released i'll chuck all the raw assets in a Mega folder for download.
 
 This game is the equlivent of a  keynote presentation made in Game Maker 2, I learnt GML while making this game so I have probably missed many best practices. Some notes about the structure...
