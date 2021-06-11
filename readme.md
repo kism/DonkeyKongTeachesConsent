@@ -21,3 +21,7 @@ This room also contains the title screen which is spawned from obj_transition
 Gameplay is controlled by obj_dk_main until this object is complete, it will unload and load obj_dk_frenzy which will handle the frenzy sequence. These two objects puppet a whole bunch of objects.
 #### Credits
 Not too much to say about this room
+
+### License
+
+uuuuuuuuuhhhhh GPLv2
