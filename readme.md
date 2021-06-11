@@ -1,53 +1,21 @@
+## Donkey Kong Teaches Consent
 
-Donkey Kong Teaches Consent Does:
-- Have mild sexual themes & imagery
-- Reward getting informed consent
+Once this game is released i'll chuck all the raw assets in a Mega folder for download.
 
-Donkey Kong Teaches Consent Does Not:
-- Have depictions of genitalia
-- Reward you for breaking consent
+This game is the equlivent of a  keynote presentation made in Game Maker 2, I learnt GML while making this game so I have probably missed many best practices. Some notes about the structure...
 
+### Rooms
 
-This game is intended to use the ‘DK Bongos’ controller. 
+#### Calibration
+This room has a spaghetti of objects that each change a global variable that contains the phase of the game (global.calibrationstate)
 
-I use a “Mayflash W012” “Gamecube adaptor for PC, Wii U and Switch”. 
+obj_000_meta will persist throughout the whole game, sets up the globals.
 
-Any non-Nintendo GameCube to USB adaptor should work.
+obj_000_debug is my debug object, needs the global.debug to be set in the obj_000_meta object.
 
-The official Nintendo adaptor (WUP-028) requires Zadig & vJoy setup. vJoy will break the native Dolphin support for this adaptor (This is a trench, look up YouTube or Reddit maybe?).
+This room also contains the title screen which is spawned from obj_transition
 
-Any controller with at least four buttons will work though. Some other good fits for controllers are:
-Taiko Drum
-Rock Band Drums
-DDR mat
-
-This game doesn’t have native keyboard support, if you don’t have access to any game controllers, vJoy is a good option for Windows.
-
-Code & Game by @kism_
-GPL v2 (Enjoy my Spaghetti!)
-Game Maker v2.3.2.560
-
-Original Art by @magicdawolfy
-Creative Commons: Attribution-NonCommercial-ShareAlike 
-
-Stolen SFX & Art
-Rareware: Donkey Kong Country 2, Donkey Kong Country 3, Donkey Kong 64
-Sega: Jet Set Radio
-
-Fonts
-pixelsagas.com: Jumpman, Steve Matteson: Liberation Sans, Quote-Unquote Apps: Courier Prime
-
-Other Art
-vecteezy: 130580 Fruit Fridge Magnet Vector, 109490 Vector Star Shape Set
-
-Special Thanks
-Liam Kinsella
-  kinsley.itch.io
-Tomtomtom
-  totallylegitimate.company
-@Metal_Junkie
-  geophilia.art
-@KrystalCoconut
-  krystalpepsi.itch.io
-@BrockNR
-  geocities.com/kingking9
+#### Chaper1 (Gameplay)
+Gameplay is controlled by obj_dk_main until this object is complete, it will unload and load obj_dk_frenzy which will handle the frenzy sequence. These two objects puppet a whole bunch of objects.
+#### Credits
+Not too much to say about this room
