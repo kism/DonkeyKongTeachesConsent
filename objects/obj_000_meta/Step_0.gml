@@ -6,8 +6,7 @@ if global.failstate == true {
 	game_end()
 }
 
-if keyboard_check_pressed(vk_f11) {
-        keyboard_clear(vk_enter);
+if keyboard_check_pressed(vk_f11) || keyboard_check_pressed(ord("F")) {
         window_center();
         window_set_fullscreen(!window_get_fullscreen());
 }

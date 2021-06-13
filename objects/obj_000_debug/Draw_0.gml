@@ -3,6 +3,7 @@
 text = "- DEBUG -" + "\n"
 
 if instance_exists(obj_000_meta) {
+	text = text + "controller: " + string(global.controllerid) + " map: " + string(global.buttononemap) + "," + string(global.buttononealtmap) + "," + string(global.buttontwomap) + "," + string(global.buttontwoaltmap) + "\n"
 	text = text + "game state: " + global.calibrationstate + "\n"
 }
 
