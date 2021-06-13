@@ -4,7 +4,7 @@
 // DEBUG: Parameter will shown the debug hud during the frenzy
 // plus make the main phase only require one spank
 global.prerelease = true
-global.debug = false
+global.debug = true
 
 window_set_fullscreen(true)
 
@@ -23,8 +23,8 @@ if global.prerelease == false {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// Controllers
-global.controllerid = 0
+// Controllers, 999 is a default way out of range, this setting is assumed to be a keyboard
+global.controllerid = 999
 
 // Buttons
 global.buttoneraise     = false
