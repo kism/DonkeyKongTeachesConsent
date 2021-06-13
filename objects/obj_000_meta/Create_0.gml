@@ -4,7 +4,9 @@
 // DEBUG: Parameter will shown the debug hud during the frenzy
 // plus make the main phase only require one spank
 global.prerelease = true
-global.debug = true
+global.debug = false
+
+window_set_fullscreen(true)
 
 if !instance_exists(obj_000_debug) && global.debug == true {
 	instance_create_layer(0, 0, "Instances", obj_000_debug)
