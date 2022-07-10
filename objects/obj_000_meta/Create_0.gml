@@ -3,8 +3,8 @@
 // PRERELEASE: Sets the prerelease watermark
 // DEBUG: Parameter will shown the debug hud during the frenzy
 // plus make the main phase only require one spank
-global.prerelease = true
-global.debug = true
+global.prerelease = false
+global.debug = false
 
 window_set_fullscreen(true)
 
