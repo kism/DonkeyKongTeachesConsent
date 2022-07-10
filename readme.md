@@ -1,5 +1,7 @@
 ## Donkey Kong Teaches Consent
 
+https://kism.itch.io/donkey-kong-teaches-consent
+
 Made with Game Maker v2.3.2.560
 
 Once this game is released i'll chuck all the raw assets in a Mega folder for download.
