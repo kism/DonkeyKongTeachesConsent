@@ -3,6 +3,10 @@
 if ready == true {
 	global_scr_inputGet(global.controllerid)
 
+	if !instance_exists(obj_tap_to_continue) {
+		instance_create_layer(room_width * 0.5, room_height * 0.9 , "Instances", obj_tap_to_continue)
+	}
+
 	if global.buttoneraise == true || global.butttworaise == true {
 		physics_world_gravity(0, 60)
 		startgame = true
